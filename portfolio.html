@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Stacksol Technologies | IT Projects & Solutions</title>
+  <meta name="description" content="Explore Stacksol Technologies' portfolio of successful IT projects — enterprise networks, cloud migrations, cybersecurity audits, smart classrooms, and government procurement solutions.">
+  <meta name="keywords" content="IT portfolio, enterprise network, cloud migration, cybersecurity audit, GeM procurement, Stacksol Technologies">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-logo">STACK<span>SOL</span></div>
+    <div class="preloader-bar"></div>
+  </div>
+
+  <!-- Mobile Overlay -->
+  <div class="mobile-overlay"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 16C8 11.58 11.58 8 16 8h8c4.42 0 8 3.58 8 8v0c0 4.42-3.58 8-8 8h-8c-4.42 0-8 3.58-8 8v0c0 4.42 3.58 8 8 8h8c4.42 0 8-3.58 8-8" stroke="#4ee0c2" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="28" cy="16" r="3" fill="#4ee0c2"/>
+            <circle cx="12" cy="32" r="3" fill="#1b6b8a"/>
+          </svg>
+        </div>
+        STACK<span>SOL</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-dropdown-toggle">Services
+            <svg viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="services.html#endpoint">Endpoint Solutions</a>
+            <a href="services.html#cloud">Cloud Solutions</a>
+            <a href="services.html#cybersecurity">Cybersecurity Solutions</a>
+            <a href="services.html#network">Network Solutions</a>
+            <a href="services.html#enterprise">Enterprise Solutions</a>
+            <a href="services.html#consulting">Consulting Solutions</a>
+          </div>
+        </div>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="team.html">Team</a>
+        <a href="order.html">Order Online</a>
+        <a href="contact.html" class="nav-cta">Contact Us</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== PAGE BANNER ===================== -->
+  <section class="page-banner">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Portfolio</span>
+      </nav>
+      <h1 class="reveal">Our <span class="text-gradient">Portfolio</span></h1>
+      <p class="reveal" style="max-width:620px; margin-top: var(--space-md);">Showcasing real-world projects that reflect our expertise in IT infrastructure, cloud solutions, cybersecurity, and government procurement.</p>
+    </div>
+    <div class="ambient-orb ambient-orb-1"></div>
+    <div class="ambient-orb ambient-orb-2"></div>
+  </section>
+
+  <!-- ===================== PORTFOLIO FILTER + GRID ===================== -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Filter Buttons -->
+      <div class="portfolio-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="infrastructure">IT Infrastructure</button>
+        <button class="filter-btn" data-filter="security">Cybersecurity</button>
+        <button class="filter-btn" data-filter="cloud">Cloud Solutions</button>
+        <button class="filter-btn" data-filter="government">Government</button>
+        <button class="filter-btn" data-filter="education">Education</button>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid stagger-children reveal">
+
+        <!-- 1. Enterprise Network Setup -->
+        <div class="portfolio-card" data-category="infrastructure">
+          <div class="portfolio-card-image">
+            <div style="width:100%;height:100%;background:linear-gradient(135deg,#1b6b8a,#134d64,#0a2e3d);display:flex;align-items:center;justify-content:center;">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(78,224,194,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="8" rx="2"/>
+                <rect x="2" y="14" width="20" height="8" rx="2"/>
+                <line x1="6" y1="6" x2="6.01" y2="6"/>
+                <line x1="6" y1="18" x2="6.01" y2="18"/>
+              </svg>
+            </div>
+            <div class="portfolio-card-overlay">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+          </div>
+          <div class="portfolio-card-body">
+            <h4>Enterprise Network Setup — Fortune 500 Client</h4>
+            <span class="portfolio-tag">IT Infrastructure</span>
+          </div>
+        </div>
+
+        <!-- 2. Cloud Migration for Govt. Department -->
+        <div class="portfolio-card" data-category="cloud government">
+          <div class="portfolio-card-image">
+            <div style="width:100%;height:100%;background:linear-gradient(135deg,#2490b5,#1b6b8a,#6366f1);display:flex;align-items:center;justify-content:center;">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(78,224,194,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+              </svg>
+            </div>
+            <div class="portfolio-card-overlay">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+          </div>
+          <div class="portfolio-card-body">
+            <h4>Cloud Migration for Govt. Department</h4>
+            <span class="portfolio-tag">Cloud</span>
+            <span class="portfolio-tag">Government</span>
+          </div>
+        </div>
+
+        <!-- 3. Cybersecurity Audit & Implementation -->
+        <div class="portfolio-card" data-category="security">
+          <div class="portfolio-card-image">
+            <div style="width:100%;height:100%;background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);display:flex;align-items:center;justify-content:center;">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(78,224,194,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <div class="portfolio-card-overlay">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+          </div>
+          <div class="portfolio-card-body">
+            <h4>Cybersecurity Audit &amp; Implementation</h4>
+            <span class="portfolio-tag">Cybersecurity</span>
+          </div>
+        </div>
+
+        <!-- 4. Smart Classroom Deployment -->
+        <div class="portfolio-card" data-category="education">
+          <div class="portfolio-card-image">
+            <div style="width:100%;height:100%;background:linear-gradient(135deg,#2bb89e,#1b6b8a,#134d64);display:flex;align-items:center;justify-content:center;">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+              </svg>
+            </div>
+            <div class="portfolio-card-overlay">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+          </div>
+          <div class="portfolio-card-body">
+            <h4>Smart Classroom Deployment — 50 Schools</h4>
+            <span class="portfolio-tag">Education</span>
+          </div>
+        </div>
+
+        <!-- 5. Data Center Setup & Management -->
+        <div class="portfolio-card" data-category="infrastructure">
+          <div class="portfolio-card-image">
+            <div style="width:100%;height:100%;background:linear-gradient(135deg,#134d64,#1a2332,#1b6b8a);display:flex;align-items:center;justify-content:center;">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(78,224,194,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="8" rx="2"/>
+                <rect x="2" y="14" width="20" height="8" rx="2"/>
+                <line x1="6" y1="6" x2="6.01" y2="6"/>
+                <line x1="6" y1="18" x2="6.01" y2="18"/>
+                <line x1="10" y1="6" x2="10.01" y2="6"/>
+                <line x1="10" y1="18" x2="10.01" y2="18"/>
+              </svg>
+            </div>
+            <div class="portfolio-card-overlay">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+          </div>
+          <div class="portfolio-card-body">
+            <h4>Data Center Setup &amp; Management</h4>
+            <span class="portfolio-tag">IT Infrastructure</span>
+          </div>
+        </div>
+
+        <!-- 6. GeM Procurement — Bulk Hardware Supply -->
+        <div class="portfolio-card" data-category="government">
+          <div class="portfolio-card-image">
+            <div style="width:100%;height:100%;background:linear-gradient(135deg,#1a365d,#2c5282,#2b6cb0);display:flex;align-items:center;justify-content:center;">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13" rx="2"/>
+                <path d="M16 8h4a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-4"/>
+                <circle cx="5.5" cy="18.5" r="2.5"/>
+                <circle cx="18.5" cy="18.5" r="2.5"/>
+              </svg>
+            </div>
+            <div class="portfolio-card-overlay">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+          </div>
+          <div class="portfolio-card-body">
+            <h4>GeM Procurement — Bulk Hardware Supply</h4>
+            <span class="portfolio-tag">Government</span>
+          </div>
+        </div>
+
+        <!-- 7. Endpoint Security for Banking Sector -->
+        <div class="portfolio-card" data-category="security">
+          <div class="portfolio-card-image">
+            <div style="width:100%;height:100%;background:linear-gradient(135deg,#203a43,#0f2027,#4ee0c2 180%);display:flex;align-items:center;justify-content:center;">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(78,224,194,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                <circle cx="12" cy="16" r="1"/>
+              </svg>
+            </div>
+            <div class="portfolio-card-overlay">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+          </div>
+          <div class="portfolio-card-body">
+            <h4>Endpoint Security for Banking Sector</h4>
+            <span class="portfolio-tag">Cybersecurity</span>
+          </div>
+        </div>
+
+        <!-- 8. Azure Cloud Infrastructure Setup -->
+        <div class="portfolio-card" data-category="cloud">
+          <div class="portfolio-card-image">
+            <div style="width:100%;height:100%;background:linear-gradient(135deg,#0078d4,#1b6b8a,#4ee0c2);display:flex;align-items:center;justify-content:center;">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"/>
+                <polyline points="8 6 2 12 8 18"/>
+                <line x1="14" y1="4" x2="10" y2="20"/>
+              </svg>
+            </div>
+            <div class="portfolio-card-overlay">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+          </div>
+          <div class="portfolio-card-body">
+            <h4>Azure Cloud Infrastructure Setup</h4>
+            <span class="portfolio-tag">Cloud</span>
+          </div>
+        </div>
+
+      </div><!-- /.portfolio-grid -->
+    </div>
+  </section>
+
+  <!-- ===================== PROJECT HIGHLIGHTS ===================== -->
+  <section class="stats-bar section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Project Highlights</span>
+        <h2>Delivering <span class="text-gradient">Results That Matter</span></h2>
+        <p>Our numbers speak for themselves — a track record of trust, quality, and impact across industries.</p>
+      </div>
+      <div class="stats-grid reveal">
+        <div class="stat-item">
+          <div class="stat-number" data-count="500" data-suffix="+">0</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="100" data-suffix="+">0</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="15" data-suffix="+">0</div>
+          <div class="stat-label">Industries Served</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="98" data-suffix="%">0</div>
+          <div class="stat-label">Client Satisfaction</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA SECTION ===================== -->
+  <section class="cta-section">
+    <div class="cta-bg"></div>
+    <div class="container">
+      <div class="cta-content reveal">
+        <h2>Have a Project in Mind?</h2>
+        <p>Let's bring it to life. From concept to deployment, our team delivers scalable IT solutions tailored to your business needs.</p>
+        <div style="display:flex;gap:var(--space-md);justify-content:center;flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn-accent btn-lg btn-ripple">
+            Get in Touch
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="services.html" class="btn btn-outline btn-lg">
+            Explore Services
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 16C8 11.58 11.58 8 16 8h8c4.42 0 8 3.58 8 8v0c0 4.42-3.58 8-8 8h-8c-4.42 0-8 3.58-8 8v0c0 4.42 3.58 8 8 8h8c4.42 0 8-3.58 8-8" stroke="#4ee0c2" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="28" cy="16" r="3" fill="#4ee0c2"/>
+                <circle cx="12" cy="32" r="3" fill="#1b6b8a"/>
+              </svg>
+            </div>
+            STACK<span>SOL</span>
+          </a>
+          <p>Your trusted partner for innovative IT solutions, hardware, and services. Empowering businesses with technology that drives growth.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="#" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-1.1.7-2.2 1A4.8 4.8 0 0 0 12 8v1A10 10 0 0 1 3 4s-4 9 5 13a11.6 11.6 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.7 7.7 0 0 0 22 4z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="order.html">Order Online</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Solutions</h5>
+          <ul>
+            <li><a href="services.html#endpoint">Endpoint Solutions</a></li>
+            <li><a href="services.html#cloud">Cloud Solutions</a></li>
+            <li><a href="services.html#cybersecurity">Cybersecurity</a></li>
+            <li><a href="services.html#network">Network Solutions</a></li>
+            <li><a href="services.html#enterprise">Enterprise Solutions</a></li>
+            <li><a href="services.html#consulting">Consulting</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact Info</h5>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>First Floor, H. No.-G-275, Gali No.-13, Block-G, Molarband Extn., Badarpur, New Delhi-110044</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.68 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.74.32 1.53.55 2.34.68a2 2 0 0 1 1.72 2v0z"/></svg>
+            <span>+91-9319596653</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>dhruv.sandilya2005@gmail.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <span>GSTIN: 07ABNCS9084P1Z6</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Stacksol Technologies Pvt. Ltd. All Rights Reserved.</p>
+        <p>Designed with precision &amp; passion</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Actions -->
+  <div class="float-actions">
+    <a href="https://wa.me/919319596653?text=Hi!%20I%20visited%20your%20website%20and%20would%20like%20to%20know%20more." class="float-btn float-btn-whatsapp" target="_blank" aria-label="WhatsApp">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <a href="tel:+919319596653" class="float-btn float-btn-phone" aria-label="Call Us">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.68 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.74.32 1.53.55 2.34.68a2 2 0 0 1 1.72 2v0z"/></svg>
+    </a>
+  </div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+</body>
+</html>
