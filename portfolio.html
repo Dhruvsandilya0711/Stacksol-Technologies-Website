@@ -3,395 +3,248 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio — Stacksol Technologies | IT Projects & Solutions</title>
-  <meta name="description" content="Explore Stacksol Technologies' portfolio of successful IT projects — enterprise networks, cloud migrations, cybersecurity audits, smart classrooms, and government procurement solutions.">
-  <meta name="keywords" content="IT portfolio, enterprise network, cloud migration, cybersecurity audit, GeM procurement, Stacksol Technologies">
+  <title>Our Work — Stacksol Technologies</title>
+  <meta name="description" content="Selected IT infrastructure, cloud, cybersecurity, education and government procurement projects delivered by Stacksol Technologies.">
+  <meta name="theme-color" content="#06070b">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Our Work — Stacksol Technologies">
+  <meta property="og:description" content="Selected IT infrastructure, cloud, cybersecurity, education and government procurement projects delivered by Stacksol Technologies.">
+  <meta property="og:site_name" content="Stacksol Technologies">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%2306070b'/%3E%3Crect x='8' y='8' width='24' height='6' rx='3' fill='%234ee0c2'/%3E%3Crect x='8' y='17' width='24' height='6' rx='3' fill='%234ee0c2' fill-opacity='.55'/%3E%3Crect x='8' y='26' width='15' height='6' rx='3' fill='%234f7cff'/%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/Syne-normal-500-800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Manrope-normal-300-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/animations.css">
-  <script src="js/main.js" defer></script>
+  <script>
+    (function (d) {
+      var r = d.documentElement; r.classList.add('js');
+      try { if (!sessionStorage.getItem('ss-visited')) r.classList.add('first'); } catch (e) {}
+      setTimeout(function () { if (!r.classList.contains('ready')) r.classList.add('ready', 'no-anim'); }, 6000);
+    })(document);
+  </script>
 </head>
-<body>
-
-  <!-- Preloader -->
-  <div class="preloader">
-    <div class="preloader-logo">STACK<span>SOL</span></div>
-    <div class="preloader-bar"></div>
+<body data-page="portfolio">
+  <div class="loader" aria-hidden="true">
+    <div class="loader__top"><span>Stacksol Technologies</span><span>New Delhi · India</span></div>
+    <div class="loader__word"><span style="--i:0">S</span><span style="--i:1">T</span><span style="--i:2">A</span><span style="--i:3">C</span><span style="--i:4">K</span><span style="--i:5" class=a>S</span><span style="--i:6" class=a>O</span><span style="--i:7" class=a>L</span></div>
+    <div class="loader__bottom"><div class="loader__bar"><i></i></div><div class="loader__count">0</div></div>
   </div>
+  <div class="pt" aria-hidden="true"><div class="pt__col"></div><div class="pt__col"></div><div class="pt__col"></div><div class="pt__col"></div><div class="pt__col"></div><div class="pt__logo">STACK<span>SOL</span></div></div>
+  <div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><i></i></div>
 
-  <!-- Mobile Overlay -->
-  <div class="mobile-overlay"></div>
-
-  <!-- Header -->
-  <header class="header">
-    <div class="header-inner">
-      <a href="index.html" class="logo">
-        <div class="logo-icon">
-          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 16C8 11.58 11.58 8 16 8h8c4.42 0 8 3.58 8 8v0c0 4.42-3.58 8-8 8h-8c-4.42 0-8 3.58-8 8v0c0 4.42 3.58 8 8 8h8c4.42 0 8-3.58 8-8" stroke="#4ee0c2" stroke-width="3" stroke-linecap="round"/>
-            <circle cx="28" cy="16" r="3" fill="#4ee0c2"/>
-            <circle cx="12" cy="32" r="3" fill="#1b6b8a"/>
-          </svg>
-        </div>
-        STACK<span>SOL</span>
-      </a>
-      <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <div class="nav-dropdown">
-          <a href="services.html" class="nav-dropdown-toggle">Services
-            <svg viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </a>
-          <div class="nav-dropdown-menu">
-            <a href="services.html#endpoint">Endpoint Solutions</a>
-            <a href="services.html#cloud">Cloud Solutions</a>
-            <a href="services.html#cybersecurity">Cybersecurity Solutions</a>
-            <a href="services.html#network">Network Solutions</a>
-            <a href="services.html#enterprise">Enterprise Solutions</a>
-            <a href="services.html#consulting">Consulting Solutions</a>
+  <header class="hdr">
+    <div class="container hdr__in">
+      <a href="index.html" class="logo" aria-label="Stacksol Technologies — home"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+  <rect x="6" y="6" width="28" height="7" rx="3.5" fill="#4ee0c2"/>
+  <rect x="6" y="16.5" width="28" height="7" rx="3.5" fill="#4ee0c2" fill-opacity=".55"/>
+  <rect x="6" y="27" width="18" height="7" rx="3.5" fill="#4f7cff"/>
+  <circle cx="30.5" cy="30.5" r="3.5" fill="#eef1f6"/>
+</svg><span>STACK<b>SOL</b></span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="about.html" data-nav="about">About</a>
+        <div class="nav__dd">
+          <a href="services.html" data-nav="services">Solutions <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+          <div class="nav__menu">
+            <a href="services.html#endpoint"><strong>Endpoint Solutions</strong><span>Laptops, desktops, workstations & servers</span></a>
+            <a href="services.html#printing"><strong>Managed Printing</strong><span>Fleet, supplies & proactive maintenance</span></a>
+            <a href="services.html#cybersecurity"><strong>Cybersecurity</strong><span>Threat defence, VAPT & data protection</span></a>
+            <a href="services.html#cloud"><strong>Cloud Solutions</strong><span>Migration, Azure / AWS & hybrid</span></a>
+            <a href="services.html#network"><strong>Network Solutions</strong><span>LAN / WAN, wireless, VPN & SD-WAN</span></a>
+            <a href="services.html#enterprise"><strong>Enterprise Solutions</strong><span>ERP, collaboration & storage</span></a>
+            <a href="services.html#consulting"><strong>IT Consulting</strong><span>Strategy, roadmaps & audits</span></a>
+            <a href="services.html#services"><strong>Specialised Services</strong><span>Installation, data centre, AMC & more</span></a>
           </div>
         </div>
-        <a href="portfolio.html" class="active">Portfolio</a>
-        <a href="team.html">Team</a>
-        <a href="order.html">Order Online</a>
-        <a href="contact.html" class="nav-cta">Contact Us</a>
+        <a href="portfolio.html" data-nav="portfolio">Work</a>
+        <a href="team.html" data-nav="team">Team</a>
+        <a href="order.html" data-nav="order">Order Online</a>
       </nav>
-      <button class="menu-toggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="hdr__cta">
+        <a href="contact.html" class="btn btn--primary" data-magnetic="0.25"><span class="btn-label">Let's talk</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>
+        <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      </div>
     </div>
   </header>
 
-  <!-- ===================== PAGE BANNER ===================== -->
-  <section class="page-banner">
-    <div class="container">
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="index.html">Home</a>
-        <span>/</span>
-        <span>Portfolio</span>
-      </nav>
-      <h1 class="reveal">Our <span class="text-gradient">Portfolio</span></h1>
-      <p class="reveal" style="max-width:620px; margin-top: var(--space-md);">Showcasing real-world projects that reflect our expertise in IT infrastructure, cloud solutions, cybersecurity, and government procurement.</p>
+  <div class="menu" aria-label="Mobile menu">
+    <nav class="menu__links">
+      <a href="index.html" data-nav="home"><span>Home</span></a>
+      <a href="about.html" data-nav="about"><span>About</span></a>
+      <a href="services.html" data-nav="services"><span>Solutions</span></a>
+      <a href="portfolio.html" data-nav="portfolio"><span>Work</span></a>
+      <a href="team.html" data-nav="team"><span>Team</span></a>
+      <a href="order.html" data-nav="order"><span>Order Online</span></a>
+      <a href="contact.html" data-nav="contact"><span>Contact</span></a>
+    </nav>
+    <div class="menu__foot">
+      <a href="tel:+919319596653">+91-9319596653</a>
+      <a href="mailto:dhruv.sandilya2005@gmail.com">dhruv.sandilya2005@gmail.com</a>
+      <span>New Delhi, India</span>
     </div>
-    <div class="ambient-orb ambient-orb-1"></div>
-    <div class="ambient-orb ambient-orb-2"></div>
-  </section>
+  </div>
 
-  <!-- ===================== PORTFOLIO FILTER + GRID ===================== -->
-  <section class="section">
+<main>
+
+  <section class="phero">
+    <div class="phero__grid" aria-hidden="true"></div>
+    <div class="phero__orb" aria-hidden="true"></div>
     <div class="container">
-
-      <!-- Filter Buttons -->
-      <div class="portfolio-filters reveal">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="infrastructure">IT Infrastructure</button>
-        <button class="filter-btn" data-filter="security">Cybersecurity</button>
-        <button class="filter-btn" data-filter="cloud">Cloud Solutions</button>
-        <button class="filter-btn" data-filter="government">Government</button>
-        <button class="filter-btn" data-filter="education">Education</button>
-      </div>
-
-      <!-- Portfolio Grid -->
-      <div class="portfolio-grid stagger-children reveal">
-
-        <!-- 1. Enterprise Network Setup -->
-        <div class="portfolio-card" data-category="infrastructure">
-          <div class="portfolio-card-image">
-            <div style="width:100%;height:100%;background:linear-gradient(135deg,#1b6b8a,#134d64,#0a2e3d);display:flex;align-items:center;justify-content:center;">
-              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(78,224,194,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="2" width="20" height="8" rx="2"/>
-                <rect x="2" y="14" width="20" height="8" rx="2"/>
-                <line x1="6" y1="6" x2="6.01" y2="6"/>
-                <line x1="6" y1="18" x2="6.01" y2="18"/>
-              </svg>
-            </div>
-            <div class="portfolio-card-overlay">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-            </div>
-          </div>
-          <div class="portfolio-card-body">
-            <h4>Enterprise Network Setup — Fortune 500 Client</h4>
-            <span class="portfolio-tag">IT Infrastructure</span>
-          </div>
-        </div>
-
-        <!-- 2. Cloud Migration for Govt. Department -->
-        <div class="portfolio-card" data-category="cloud government">
-          <div class="portfolio-card-image">
-            <div style="width:100%;height:100%;background:linear-gradient(135deg,#2490b5,#1b6b8a,#6366f1);display:flex;align-items:center;justify-content:center;">
-              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(78,224,194,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
-              </svg>
-            </div>
-            <div class="portfolio-card-overlay">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-            </div>
-          </div>
-          <div class="portfolio-card-body">
-            <h4>Cloud Migration for Govt. Department</h4>
-            <span class="portfolio-tag">Cloud</span>
-            <span class="portfolio-tag">Government</span>
-          </div>
-        </div>
-
-        <!-- 3. Cybersecurity Audit & Implementation -->
-        <div class="portfolio-card" data-category="security">
-          <div class="portfolio-card-image">
-            <div style="width:100%;height:100%;background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);display:flex;align-items:center;justify-content:center;">
-              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(78,224,194,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-              </svg>
-            </div>
-            <div class="portfolio-card-overlay">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-            </div>
-          </div>
-          <div class="portfolio-card-body">
-            <h4>Cybersecurity Audit &amp; Implementation</h4>
-            <span class="portfolio-tag">Cybersecurity</span>
-          </div>
-        </div>
-
-        <!-- 4. Smart Classroom Deployment -->
-        <div class="portfolio-card" data-category="education">
-          <div class="portfolio-card-image">
-            <div style="width:100%;height:100%;background:linear-gradient(135deg,#2bb89e,#1b6b8a,#134d64);display:flex;align-items:center;justify-content:center;">
-              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
-                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
-              </svg>
-            </div>
-            <div class="portfolio-card-overlay">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-            </div>
-          </div>
-          <div class="portfolio-card-body">
-            <h4>Smart Classroom Deployment — 50 Schools</h4>
-            <span class="portfolio-tag">Education</span>
-          </div>
-        </div>
-
-        <!-- 5. Data Center Setup & Management -->
-        <div class="portfolio-card" data-category="infrastructure">
-          <div class="portfolio-card-image">
-            <div style="width:100%;height:100%;background:linear-gradient(135deg,#134d64,#1a2332,#1b6b8a);display:flex;align-items:center;justify-content:center;">
-              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(78,224,194,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="2" width="20" height="8" rx="2"/>
-                <rect x="2" y="14" width="20" height="8" rx="2"/>
-                <line x1="6" y1="6" x2="6.01" y2="6"/>
-                <line x1="6" y1="18" x2="6.01" y2="18"/>
-                <line x1="10" y1="6" x2="10.01" y2="6"/>
-                <line x1="10" y1="18" x2="10.01" y2="18"/>
-              </svg>
-            </div>
-            <div class="portfolio-card-overlay">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-            </div>
-          </div>
-          <div class="portfolio-card-body">
-            <h4>Data Center Setup &amp; Management</h4>
-            <span class="portfolio-tag">IT Infrastructure</span>
-          </div>
-        </div>
-
-        <!-- 6. GeM Procurement — Bulk Hardware Supply -->
-        <div class="portfolio-card" data-category="government">
-          <div class="portfolio-card-image">
-            <div style="width:100%;height:100%;background:linear-gradient(135deg,#1a365d,#2c5282,#2b6cb0);display:flex;align-items:center;justify-content:center;">
-              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="1" y="3" width="15" height="13" rx="2"/>
-                <path d="M16 8h4a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-4"/>
-                <circle cx="5.5" cy="18.5" r="2.5"/>
-                <circle cx="18.5" cy="18.5" r="2.5"/>
-              </svg>
-            </div>
-            <div class="portfolio-card-overlay">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-            </div>
-          </div>
-          <div class="portfolio-card-body">
-            <h4>GeM Procurement — Bulk Hardware Supply</h4>
-            <span class="portfolio-tag">Government</span>
-          </div>
-        </div>
-
-        <!-- 7. Endpoint Security for Banking Sector -->
-        <div class="portfolio-card" data-category="security">
-          <div class="portfolio-card-image">
-            <div style="width:100%;height:100%;background:linear-gradient(135deg,#203a43,#0f2027,#4ee0c2 180%);display:flex;align-items:center;justify-content:center;">
-              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(78,224,194,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-                <circle cx="12" cy="16" r="1"/>
-              </svg>
-            </div>
-            <div class="portfolio-card-overlay">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-            </div>
-          </div>
-          <div class="portfolio-card-body">
-            <h4>Endpoint Security for Banking Sector</h4>
-            <span class="portfolio-tag">Cybersecurity</span>
-          </div>
-        </div>
-
-        <!-- 8. Azure Cloud Infrastructure Setup -->
-        <div class="portfolio-card" data-category="cloud">
-          <div class="portfolio-card-image">
-            <div style="width:100%;height:100%;background:linear-gradient(135deg,#0078d4,#1b6b8a,#4ee0c2);display:flex;align-items:center;justify-content:center;">
-              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="16 18 22 12 16 6"/>
-                <polyline points="8 6 2 12 8 18"/>
-                <line x1="14" y1="4" x2="10" y2="20"/>
-              </svg>
-            </div>
-            <div class="portfolio-card-overlay">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-            </div>
-          </div>
-          <div class="portfolio-card-body">
-            <h4>Azure Cloud Infrastructure Setup</h4>
-            <span class="portfolio-tag">Cloud</span>
-          </div>
-        </div>
-
-      </div><!-- /.portfolio-grid -->
-    </div>
-  </section>
-
-  <!-- ===================== PROJECT HIGHLIGHTS ===================== -->
-  <section class="stats-bar section-alt">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Project Highlights</span>
-        <h2>Delivering <span class="text-gradient">Results That Matter</span></h2>
-        <p>Our numbers speak for themselves — a track record of trust, quality, and impact across industries.</p>
-      </div>
-      <div class="stats-grid reveal">
-        <div class="stat-item">
-          <div class="stat-number" data-count="500" data-suffix="+">0</div>
-          <div class="stat-label">Projects Completed</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number" data-count="100" data-suffix="+">0</div>
-          <div class="stat-label">Happy Clients</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number" data-count="15" data-suffix="+">0</div>
-          <div class="stat-label">Industries Served</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number" data-count="98" data-suffix="%">0</div>
-          <div class="stat-label">Client Satisfaction</div>
-        </div>
+      <div class="crumbs" data-reveal="fade"><a href="index.html">Home</a><span>/</span><span>Work</span></div>
+      <h1 class="display-xl phero__title" data-split="chars">Work that <span class="serif">works.</span></h1>
+      <div class="phero__foot">
+        <p class="lead" data-reveal>A selection of engagements across IT infrastructure, cloud, cybersecurity, education and government procurement — each delivered on spec, on time and supported long after go-live.</p>
+        <div class="chips" data-reveal><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect x="2" y="6" width="20" height="14" rx="2"/></svg> Enterprise</span><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 22h18"/><path d="M6 18v-7M10 18v-7M14 18v-7M18 18v-7"/><path d="m12 2 8 5H4z"/></svg> Government</span><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.42 10.92a1 1 0 0 0-.02-1.84L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.83l8.57 3.91a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg> Education</span></div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== CTA SECTION ===================== -->
-  <section class="cta-section">
-    <div class="cta-bg"></div>
+  <section class="section" style="padding-top:clamp(30px,4vw,60px)">
     <div class="container">
-      <div class="cta-content reveal">
-        <h2>Have a Project in Mind?</h2>
-        <p>Let's bring it to life. From concept to deployment, our team delivers scalable IT solutions tailored to your business needs.</p>
-        <div style="display:flex;gap:var(--space-md);justify-content:center;flex-wrap:wrap;">
-          <a href="contact.html" class="btn btn-accent btn-lg btn-ripple">
-            Get in Touch
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
-          <a href="services.html" class="btn btn-outline btn-lg">
-            Explore Services
-          </a>
-        </div>
+      <div class="filters" role="group" aria-label="Filter projects" data-reveal>
+        <button class="filter active" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter" data-filter="infra" aria-pressed="false">IT Infrastructure</button>
+        <button class="filter" data-filter="security" aria-pressed="false">Cybersecurity</button>
+        <button class="filter" data-filter="cloud" aria-pressed="false">Cloud</button>
+        <button class="filter" data-filter="gov" aria-pressed="false">Government</button>
+        <button class="filter" data-filter="edu" aria-pressed="false">Education</button>
+      </div>
+
+      <div class="works">
+        <a href="contact.html" class="work" data-cats="infra" data-reveal data-cursor="Similar?">
+          <div class="work__media"><div class="work__art" style="--art:radial-gradient(circle at 75% 20%, rgba(78,224,194,.45), transparent 45%), linear-gradient(140deg,#0e3040,#0a0f1c 60%,#151c45)"><div class="visual__grid"></div></div><div class="work__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"/><path d="M12 12V8"/></svg></div><div class="work__cat"><span>IT Infrastructure</span></div></div>
+          <div class="work__meta"><div><h3>Enterprise network build — corporate campus</h3><p>Structured cabling, core switching and campus-wide Wi-Fi for a multi-floor corporate office.</p></div><span class="work__yr">2025</span></div>
+        </a>
+        <a href="contact.html" class="work" data-cats="cloud gov" data-reveal data-cursor="Similar?">
+          <div class="work__media"><div class="work__art" style="--art:radial-gradient(circle at 20% 30%, rgba(79,124,255,.55), transparent 50%), linear-gradient(160deg,#0b1a33,#0a0d18 70%)"><div class="visual__grid"></div></div><div class="work__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg></div><div class="work__cat"><span>Cloud</span><span>Government</span></div></div>
+          <div class="work__meta"><div><h3>Cloud migration for a government department</h3><p>Phased migration of legacy workloads to a secure hybrid cloud with zero data loss.</p></div><span class="work__yr">2025</span></div>
+        </a>
+        <a href="contact.html" class="work" data-cats="security" data-reveal data-cursor="Similar?">
+          <div class="work__media"><div class="work__art" style="--art:radial-gradient(circle at 50% 110%, rgba(78,224,194,.5), transparent 55%), linear-gradient(180deg,#07090f,#0c1b24)"><div class="visual__grid"></div></div><div class="work__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></div><div class="work__cat"><span>Cybersecurity</span></div></div>
+          <div class="work__meta"><div><h3>Security audit &amp; hardening programme</h3><p>VAPT, firewall redesign and endpoint protection rollout following a full security assessment.</p></div><span class="work__yr">2025</span></div>
+        </a>
+        <a href="contact.html" class="work" data-cats="edu" data-reveal data-cursor="Similar?">
+          <div class="work__media"><div class="work__art" style="--art:radial-gradient(circle at 80% 70%, rgba(255,184,77,.35), transparent 45%), linear-gradient(140deg,#1a1633,#0a0d18 65%)"><div class="visual__grid"></div></div><div class="work__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h20"/><path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"/><path d="m7 21 5-5 5 5"/></svg></div><div class="work__cat"><span>Education</span></div></div>
+          <div class="work__meta"><div><h3>Smart classroom rollout across schools</h3><p>Interactive panels, AV systems and teacher training delivered across multiple campuses.</p></div><span class="work__yr">2025</span></div>
+        </a>
+        <a href="contact.html" class="work" data-cats="infra" data-reveal data-cursor="Similar?">
+          <div class="work__media"><div class="work__art" style="--art:radial-gradient(circle at 30% 20%, rgba(78,224,194,.35), transparent 45%), radial-gradient(circle at 80% 90%, rgba(79,124,255,.4), transparent 45%), linear-gradient(160deg,#0a1220,#0a0d18)"><div class="visual__grid"></div></div><div class="work__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01M6 18h.01"/></svg></div><div class="work__cat"><span>IT Infrastructure</span></div></div>
+          <div class="work__meta"><div><h3>Data centre setup &amp; management</h3><p>Rack, power and cooling design with server and storage deployment and ongoing management.</p></div><span class="work__yr">2025</span></div>
+        </a>
+        <a href="contact.html" class="work" data-cats="gov" data-reveal data-cursor="Similar?">
+          <div class="work__media"><div class="work__art" style="--art:radial-gradient(circle at 70% 30%, rgba(79,124,255,.45), transparent 50%), linear-gradient(140deg,#0f2b2b,#0a0d18 70%)"><div class="visual__grid"></div></div><div class="work__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg></div><div class="work__cat"><span>Government</span></div></div>
+          <div class="work__meta"><div><h3>GeM procurement — bulk hardware supply</h3><p>Hundreds of desktops, laptops and peripherals supplied through GeM with installation support.</p></div><span class="work__yr">2024</span></div>
+        </a>
+        <a href="contact.html" class="work" data-cats="security" data-reveal data-cursor="Similar?">
+          <div class="work__media"><div class="work__art" style="--art:radial-gradient(circle at 25% 75%, rgba(78,224,194,.4), transparent 50%), linear-gradient(200deg,#131a3a,#07090f 70%)"><div class="visual__grid"></div></div><div class="work__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div><div class="work__cat"><span>Cybersecurity</span></div></div>
+          <div class="work__meta"><div><h3>Endpoint security for a financial services firm</h3><p>Centralised endpoint protection, encryption and policy management across branches.</p></div><span class="work__yr">2025</span></div>
+        </a>
+        <a href="contact.html" class="work" data-cats="cloud" data-reveal data-cursor="Similar?">
+          <div class="work__media"><div class="work__art" style="--art:radial-gradient(circle at 60% 20%, rgba(79,179,255,.5), transparent 50%), linear-gradient(160deg,#0b2233,#0a0d18 70%)"><div class="visual__grid"></div></div><div class="work__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg></div><div class="work__cat"><span>Cloud</span></div></div>
+          <div class="work__meta"><div><h3>Azure infrastructure &amp; Microsoft 365 setup</h3><p>Identity, collaboration and cloud infrastructure provisioned for a growing mid-size business.</p></div><span class="work__yr">2026</span></div>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- ===================== FOOTER ===================== -->
-  <footer class="footer">
+  <section class="section section--paper">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="logo">
-            <div class="logo-icon">
-              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 16C8 11.58 11.58 8 16 8h8c4.42 0 8 3.58 8 8v0c0 4.42-3.58 8-8 8h-8c-4.42 0-8 3.58-8 8v0c0 4.42 3.58 8 8 8h8c4.42 0 8-3.58 8-8" stroke="#4ee0c2" stroke-width="3" stroke-linecap="round"/>
-                <circle cx="28" cy="16" r="3" fill="#4ee0c2"/>
-                <circle cx="12" cy="32" r="3" fill="#1b6b8a"/>
-              </svg>
-            </div>
-            STACK<span>SOL</span>
-          </a>
-          <p>Your trusted partner for innovative IT solutions, hardware, and services. Empowering businesses with technology that drives growth.</p>
-          <div class="footer-social">
-            <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
-            <a href="#" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-1.1.7-2.2 1A4.8 4.8 0 0 0 12 8v1A10 10 0 0 1 3 4s-4 9 5 13a11.6 11.6 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.7 7.7 0 0 0 22 4z"/></svg></a>
-            <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      <div class="shead">
+        <div class="shead__l">
+          <span class="eyebrow" data-reveal>Impact</span>
+          <h2 class="display-l" data-split>Results that <span class="serif">matter.</span></h2>
+        </div>
+        <p class="lead" data-reveal>A track record of trust, quality and impact across industries.</p>
+      </div>
+      <div class="stats" data-stagger="120">
+        <div class="stat" data-reveal><div class="stat__n"><span data-count="500">0</span><sup>+</sup></div><div class="stat__l">Projects completed</div></div>
+        <div class="stat" data-reveal><div class="stat__n"><span data-count="100">0</span><sup>+</sup></div><div class="stat__l">Happy clients</div></div>
+        <div class="stat" data-reveal><div class="stat__n"><span data-count="15">0</span><sup>+</sup></div><div class="stat__l">Industries served</div></div>
+        <div class="stat" data-reveal><div class="stat__n"><span data-count="98">0</span><sup>%</sup></div><div class="stat__l">Client satisfaction</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="cta__grid" aria-hidden="true"></div>
+    <div class="cta__bg" aria-hidden="true"></div>
+    <div class="container">
+      <span class="eyebrow" data-reveal>Have a project in mind?</span>
+      <h2 class="display-l cta__title" data-split>Let's bring it to <span class="serif">life.</span></h2>
+      <div data-reveal="scale"><a href="contact.html" class="circle-btn" data-magnetic="0.45"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>Start a project</span></a></div>
+    </div>
+  </section>
+
+</main>
+
+  <footer class="ftr">
+    <div class="container">
+      <div class="ftr__top">
+        <div class="ftr__about">
+          <a href="index.html" class="logo"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+  <rect x="6" y="6" width="28" height="7" rx="3.5" fill="#4ee0c2"/>
+  <rect x="6" y="16.5" width="28" height="7" rx="3.5" fill="#4ee0c2" fill-opacity=".55"/>
+  <rect x="6" y="27" width="18" height="7" rx="3.5" fill="#4f7cff"/>
+  <circle cx="30.5" cy="30.5" r="3.5" fill="#eef1f6"/>
+</svg><span>STACK<b>SOL</b></span></a>
+          <p>End-to-end IT solutions, enterprise hardware and professional services — engineered for businesses and government organisations across India.</p>
+          <div class="socials">
+            <a href="https://wa.me/919319596653" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg></a>
+            <a href="mailto:dhruv.sandilya2005@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+            <a href="tel:+919319596653" aria-label="Call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
           </div>
         </div>
-        <div class="footer-col">
-          <h5>Quick Links</h5>
+        <div>
+          <h4>Company</h4>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="team.html">Our Team</a></li>
-            <li><a href="order.html">Order Online</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="portfolio.html">Our work</a></li>
+            <li><a href="team.html">Leadership</a></li>
+            <li><a href="order.html">Order online</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-        <div class="footer-col">
-          <h5>Solutions</h5>
+        <div>
+          <h4>Solutions</h4>
           <ul>
             <li><a href="services.html#endpoint">Endpoint Solutions</a></li>
-            <li><a href="services.html#cloud">Cloud Solutions</a></li>
+            <li><a href="services.html#printing">Managed Printing</a></li>
             <li><a href="services.html#cybersecurity">Cybersecurity</a></li>
+            <li><a href="services.html#cloud">Cloud Solutions</a></li>
             <li><a href="services.html#network">Network Solutions</a></li>
             <li><a href="services.html#enterprise">Enterprise Solutions</a></li>
-            <li><a href="services.html#consulting">Consulting</a></li>
+            <li><a href="services.html#consulting">IT Consulting</a></li>
           </ul>
         </div>
-        <div class="footer-col">
-          <h5>Contact Info</h5>
-          <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span>First Floor, H. No.-G-275, Gali No.-13, Block-G, Molarband Extn., Badarpur, New Delhi-110044</span>
-          </div>
-          <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.68 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.74.32 1.53.55 2.34.68a2 2 0 0 1 1.72 2v0z"/></svg>
-            <span>+91-9319596653</span>
-          </div>
-          <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <span>dhruv.sandilya2005@gmail.com</span>
-          </div>
-          <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-            <span>GSTIN: 07ABNCS9084P1Z6</span>
-          </div>
+        <div>
+          <h4>Reach us</h4>
+          <ul class="ftr__contact">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><span>First Floor, H. No. G-275, Gali No. 13, Block-G, Molarband Extn., Badarpur, New Delhi – 110044</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+919319596653">+91-9319596653</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:dhruv.sandilya2005@gmail.com">dhruv.sandilya2005@gmail.com</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8M16 13H8M16 17H8"/></svg><span>GSTIN: 07ABNCS9084P1Z6</span></li>
+          </ul>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 Stacksol Technologies Pvt. Ltd. All Rights Reserved.</p>
-        <p>Designed with precision &amp; passion</p>
+    </div>
+    <div class="ftr__word" data-split="chars" aria-hidden="true">STACKSOL</div>
+    <div class="container">
+      <div class="ftr__bottom">
+        <span>© <span data-year>2026</span> Stacksol Technologies Pvt. Ltd. All rights reserved.</span>
+        <span>New Delhi · <span data-clock>--:--</span> IST</span>
+        <a href="#" class="to-top link-u" data-top>Back to top ↑</a>
       </div>
     </div>
   </footer>
 
-  <!-- Floating Actions -->
-  <div class="float-actions">
-    <a href="https://wa.me/919319596653?text=Hi!%20I%20visited%20your%20website%20and%20would%20like%20to%20know%20more." class="float-btn float-btn-whatsapp" target="_blank" aria-label="WhatsApp">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    </a>
-    <a href="tel:+919319596653" class="float-btn float-btn-phone" aria-label="Call Us">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.68 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.74.32 1.53.55 2.34.68a2 2 0 0 1 1.72 2v0z"/></svg>
-    </a>
-  </div>
+  <a href="https://wa.me/919319596653?text=Hi!%20I%20visited%20your%20website%20and%20would%20like%20to%20know%20more." class="fab" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg></a>
 
-  <!-- Back to Top -->
-  <button class="back-to-top" aria-label="Back to top">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 15l-6-6-6 6"/></svg>
-  </button>
-
+  <script src="js/vendor/gsap.min.js" defer></script>
+  <script src="js/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="js/vendor/lenis.min.js" defer></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
