@@ -3,610 +3,481 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stacksol Technologies — Innovative IT Solutions, Hardware &amp; Enterprise Services</title>
-  <meta name="description" content="Stacksol Technologies is a trusted IT solutions provider offering endpoint, cloud, cybersecurity, and network solutions. Authorized GeM partner with GST registration. Empowering businesses with next-gen hardware and enterprise security.">
-  <meta name="keywords" content="IT solutions, hardware, cloud infrastructure, cybersecurity, network solutions, GeM partner, enterprise security, Stacksol Technologies">
-  <meta name="author" content="Stacksol Technologies Pvt. Ltd.">
+  <title>Stacksol Technologies — IT Solutions, Enterprise Hardware & Services</title>
+  <meta name="description" content="Stacksol Technologies delivers end-to-end IT solutions — endpoint, managed printing, cybersecurity, cloud, network, enterprise and consulting — for businesses and government organisations across India. GeM registered, GST compliant.">
+  <meta name="theme-color" content="#06070b">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Stacksol Technologies — IT Solutions, Enterprise Hardware & Services">
+  <meta property="og:description" content="Stacksol Technologies delivers end-to-end IT solutions — endpoint, managed printing, cybersecurity, cloud, network, enterprise and consulting — for businesses and government organisations across India. GeM registered, GST compliant.">
+  <meta property="og:site_name" content="Stacksol Technologies">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%2306070b'/%3E%3Crect x='8' y='8' width='24' height='6' rx='3' fill='%234ee0c2'/%3E%3Crect x='8' y='17' width='24' height='6' rx='3' fill='%234ee0c2' fill-opacity='.55'/%3E%3Crect x='8' y='26' width='15' height='6' rx='3' fill='%234f7cff'/%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/Syne-normal-500-800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Manrope-normal-300-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/animations.css">
+  <script>
+    (function (d) {
+      var r = d.documentElement; r.classList.add('js');
+      try { if (!sessionStorage.getItem('ss-visited')) r.classList.add('first'); } catch (e) {}
+      setTimeout(function () { if (!r.classList.contains('ready')) r.classList.add('ready', 'no-anim'); }, 6000);
+    })(document);
+  </script>
 </head>
-<body>
-
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- PRELOADER                                   -->
-  <!-- ═══════════════════════════════════════════ -->
-  <div class="preloader">
-    <div class="preloader-logo">STACK<span>SOL</span></div>
-    <div class="preloader-bar"></div>
+<body data-page="home">
+  <div class="loader" aria-hidden="true">
+    <div class="loader__top"><span>Stacksol Technologies</span><span>New Delhi · India</span></div>
+    <div class="loader__word"><span style="--i:0">S</span><span style="--i:1">T</span><span style="--i:2">A</span><span style="--i:3">C</span><span style="--i:4">K</span><span style="--i:5" class=a>S</span><span style="--i:6" class=a>O</span><span style="--i:7" class=a>L</span></div>
+    <div class="loader__bottom"><div class="loader__bar"><i></i></div><div class="loader__count">0</div></div>
   </div>
+  <div class="pt" aria-hidden="true"><div class="pt__col"></div><div class="pt__col"></div><div class="pt__col"></div><div class="pt__col"></div><div class="pt__col"></div><div class="pt__logo">STACK<span>SOL</span></div></div>
+  <div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><i></i></div>
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- MOBILE OVERLAY & HEADER                     -->
-  <!-- ═══════════════════════════════════════════ -->
-  <div class="mobile-overlay"></div>
-  <header class="header">
-    <div class="header-inner">
-      <a href="index.html" class="logo">
-        <div class="logo-icon">
-          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 16C8 11.58 11.58 8 16 8h8c4.42 0 8 3.58 8 8v0c0 4.42-3.58 8-8 8h-8c-4.42 0-8 3.58-8 8v0c0 4.42 3.58 8 8 8h8c4.42 0 8-3.58 8-8" stroke="#4ee0c2" stroke-width="3" stroke-linecap="round"/>
-            <circle cx="28" cy="16" r="3" fill="#4ee0c2"/>
-            <circle cx="12" cy="32" r="3" fill="#1b6b8a"/>
-          </svg>
-        </div>
-        STACK<span>SOL</span>
-      </a>
-      <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <div class="nav-dropdown">
-          <a href="services.html" class="nav-dropdown-toggle">Services
-            <svg viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </a>
-          <div class="nav-dropdown-menu">
-            <a href="services.html#endpoint">Endpoint Solutions</a>
-            <a href="services.html#cloud">Cloud Solutions</a>
-            <a href="services.html#cybersecurity">Cybersecurity Solutions</a>
-            <a href="services.html#network">Network Solutions</a>
-            <a href="services.html#enterprise">Enterprise Solutions</a>
-            <a href="services.html#consulting">Consulting Solutions</a>
+  <header class="hdr">
+    <div class="container hdr__in">
+      <a href="index.html" class="logo" aria-label="Stacksol Technologies — home"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+  <rect x="6" y="6" width="28" height="7" rx="3.5" fill="#4ee0c2"/>
+  <rect x="6" y="16.5" width="28" height="7" rx="3.5" fill="#4ee0c2" fill-opacity=".55"/>
+  <rect x="6" y="27" width="18" height="7" rx="3.5" fill="#4f7cff"/>
+  <circle cx="30.5" cy="30.5" r="3.5" fill="#eef1f6"/>
+</svg><span>STACK<b>SOL</b></span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="about.html" data-nav="about">About</a>
+        <div class="nav__dd">
+          <a href="services.html" data-nav="services">Solutions <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+          <div class="nav__menu">
+            <a href="services.html#endpoint"><strong>Endpoint Solutions</strong><span>Laptops, desktops, workstations & servers</span></a>
+            <a href="services.html#printing"><strong>Managed Printing</strong><span>Fleet, supplies & proactive maintenance</span></a>
+            <a href="services.html#cybersecurity"><strong>Cybersecurity</strong><span>Threat defence, VAPT & data protection</span></a>
+            <a href="services.html#cloud"><strong>Cloud Solutions</strong><span>Migration, Azure / AWS & hybrid</span></a>
+            <a href="services.html#network"><strong>Network Solutions</strong><span>LAN / WAN, wireless, VPN & SD-WAN</span></a>
+            <a href="services.html#enterprise"><strong>Enterprise Solutions</strong><span>ERP, collaboration & storage</span></a>
+            <a href="services.html#consulting"><strong>IT Consulting</strong><span>Strategy, roadmaps & audits</span></a>
+            <a href="services.html#services"><strong>Specialised Services</strong><span>Installation, data centre, AMC & more</span></a>
           </div>
         </div>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="team.html">Team</a>
-        <a href="order.html">Order Online</a>
-        <a href="contact.html" class="nav-cta">Contact Us</a>
+        <a href="portfolio.html" data-nav="portfolio">Work</a>
+        <a href="team.html" data-nav="team">Team</a>
+        <a href="order.html" data-nav="order">Order Online</a>
       </nav>
-      <button class="menu-toggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="hdr__cta">
+        <a href="contact.html" class="btn btn--primary" data-magnetic="0.25"><span class="btn-label">Let's talk</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>
+        <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      </div>
     </div>
   </header>
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- 1 · HERO SECTION                            -->
-  <!-- ═══════════════════════════════════════════ -->
+  <div class="menu" aria-label="Mobile menu">
+    <nav class="menu__links">
+      <a href="index.html" data-nav="home"><span>Home</span></a>
+      <a href="about.html" data-nav="about"><span>About</span></a>
+      <a href="services.html" data-nav="services"><span>Solutions</span></a>
+      <a href="portfolio.html" data-nav="portfolio"><span>Work</span></a>
+      <a href="team.html" data-nav="team"><span>Team</span></a>
+      <a href="order.html" data-nav="order"><span>Order Online</span></a>
+      <a href="contact.html" data-nav="contact"><span>Contact</span></a>
+    </nav>
+    <div class="menu__foot">
+      <a href="tel:+919319596653">+91-9319596653</a>
+      <a href="mailto:dhruv.sandilya2005@gmail.com">dhruv.sandilya2005@gmail.com</a>
+      <span>New Delhi, India</span>
+    </div>
+  </div>
+
+<main>
+
+  <!-- HERO -->
   <section class="hero">
-    <!-- Particle canvas -->
-    <div class="hero-particles"><canvas></canvas></div>
-
-    <!-- Ambient glow orbs -->
-    <div class="ambient-orb ambient-orb-1"></div>
-    <div class="ambient-orb ambient-orb-2"></div>
-
+    <div class="hero__canvas" aria-hidden="true"><canvas></canvas></div>
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="hero__glow hero__glow--2" aria-hidden="true"></div>
     <div class="container">
-      <div class="hero-content reveal">
-        <div class="hero-badge">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          Authorized GeM Partner · GST Registered
+      <div class="hero__top">
+        <div class="chips" data-reveal="fade" style="--d:600ms">
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> GeM Registered Seller</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8M16 13H8M16 17H8"/></svg> GST Compliant</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg> Pan-India Delivery</span>
         </div>
+      </div>
 
-        <h1>Empowering Businesses with<br>
-          <span data-typing="Innovative IT Solutions|Next-Gen Hardware|Enterprise Security|Cloud Infrastructure"></span><span class="typing-cursor"></span>
-        </h1>
+      <h1 class="hero__title display-xl">
+        <span class="row" data-split="chars">We build the</span>
+        <span class="row" data-split="chars" style="--d:250ms"><span class="serif">stack</span> your</span>
+        <span class="row" data-split="chars" style="--d:450ms">business runs on.</span>
+      </h1>
 
-        <p class="hero-sub">Stacksol Technologies is your trusted partner for end-to-end IT solutions — from cutting-edge hardware procurement to enterprise-grade cloud infrastructure, cybersecurity, and beyond. We help businesses scale, secure, and succeed.</p>
-
-        <div class="hero-btns">
-          <a href="services.html" class="btn btn-accent btn-lg btn-ripple magnetic-wrap">
-            Explore Solutions
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
-          </a>
-          <a href="contact.html" class="btn btn-outline btn-lg btn-ripple magnetic-wrap">
-            Contact Us
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          </a>
+      <div class="hero__bottom">
+        <p class="lead" data-reveal style="--d:700ms">From the laptop on every desk to the cloud behind it and the firewall in front — Stacksol designs, supplies, secures and supports the technology that keeps Indian enterprises and government bodies moving.</p>
+        <div class="hero__btns" data-reveal style="--d:850ms">
+          <a href="services.html" class="btn btn--primary" data-magnetic="0.2"><span class="btn-label">Explore solutions</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>
+          <a href="order.html" class="btn btn--ghost" data-magnetic="0.2"><span class="btn-label">Request a quote</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>
+        </div>
+        <div class="badge-rot" data-reveal="scale" style="--d:1000ms">
+          <svg viewBox="0 0 120 120" aria-hidden="true"><defs><path id="circ" d="M60,60 m-48,0 a48,48 0 1,1 96,0 a48,48 0 1,1 -96,0"/></defs><text><textPath href="#circ">IT Solutions • Hardware • Services • </textPath></text></svg>
+          <a href="#solutions" aria-label="Scroll to solutions"><b><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg></span></b></a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- 2 · STATS COUNTER BAR                       -->
-  <!-- ═══════════════════════════════════════════ -->
-  <div class="stats-bar reveal">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item">
-          <span class="stat-number" data-count="100" data-suffix="+">0</span>
-          <span class="stat-label">Happy Clients</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number" data-count="500" data-suffix="+">0</span>
-          <span class="stat-label">Projects Delivered</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number" data-count="50" data-suffix="+">0</span>
-          <span class="stat-label">Technology Partners</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number" data-count="24" data-suffix="/7">0</span>
-          <span class="stat-label">Support Available</span>
-        </div>
+  <!-- BRAND MARQUEE -->
+  <div class="marquee" data-marquee="0.7" aria-label="Technology brands we supply">
+    <div class="marquee__track">
+      <div class="marquee__group">
+        <span class="marquee__item">HP</span><svg class="marquee__star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9 4.9 19.1"/></svg>
+        <span class="marquee__item">Dell</span><svg class="marquee__star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9 4.9 19.1"/></svg>
+        <span class="marquee__item">Lenovo</span><svg class="marquee__star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9 4.9 19.1"/></svg>
+        <span class="marquee__item">Cisco</span><svg class="marquee__star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9 4.9 19.1"/></svg>
+        <span class="marquee__item">Microsoft</span><svg class="marquee__star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9 4.9 19.1"/></svg>
+        <span class="marquee__item">Acer</span><svg class="marquee__star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9 4.9 19.1"/></svg>
+        <span class="marquee__item">IBM</span><svg class="marquee__star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9 4.9 19.1"/></svg>
+        <span class="marquee__item">Asus</span><svg class="marquee__star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9 4.9 19.1"/></svg>
+        <span class="marquee__item">Samsung</span><svg class="marquee__star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9 4.9 19.1"/></svg>
+        <span class="marquee__item">Intel</span><svg class="marquee__star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9 4.9 19.1"/></svg>
+        <span class="marquee__item">AMD</span><svg class="marquee__star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9 4.9 19.1"/></svg>
+        <span class="marquee__item">Seagate</span><svg class="marquee__star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9 4.9 19.1"/></svg>
       </div>
     </div>
   </div>
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- 3 · SOLUTIONS OVERVIEW                      -->
-  <!-- ═══════════════════════════════════════════ -->
-  <section class="section section-alt" id="solutions">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">What We Offer</span>
-        <h2>Comprehensive <span class="text-gradient">IT Solutions</span></h2>
-        <p class="text-muted">Tailored technology solutions designed to accelerate your digital transformation and keep your business ahead of the curve.</p>
-      </div>
-
-      <div class="grid grid-4 stagger-children">
-        <!-- Endpoint Solutions -->
-        <div class="card service-card card-shine tilt-card reveal">
-          <div class="service-icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-              <line x1="8" y1="21" x2="16" y2="21"/>
-              <line x1="12" y1="17" x2="12" y2="21"/>
-            </svg>
-          </div>
-          <h4>Endpoint Solutions</h4>
-          <p>Enterprise laptops, desktops, and workstations from leading OEMs. Complete lifecycle management and deployment.</p>
-          <a href="services.html#endpoint" class="card-link">
-            Learn More
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
-
-        <!-- Cloud Solutions -->
-        <div class="card service-card card-shine tilt-card reveal">
-          <div class="service-icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
-            </svg>
-          </div>
-          <h4>Cloud Solutions</h4>
-          <p>Scalable cloud infrastructure, migration strategies, and managed services across AWS, Azure, and hybrid environments.</p>
-          <a href="services.html#cloud" class="card-link">
-            Learn More
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
-
-        <!-- Cybersecurity -->
-        <div class="card service-card card-shine tilt-card reveal">
-          <div class="service-icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-            </svg>
-          </div>
-          <h4>Cybersecurity</h4>
-          <p>Comprehensive threat protection, firewall management, endpoint security, and compliance-driven security frameworks.</p>
-          <a href="services.html#cybersecurity" class="card-link">
-            Learn More
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
-
-        <!-- Network Solutions -->
-        <div class="card service-card card-shine tilt-card reveal">
-          <div class="service-icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"/>
-              <line x1="2" y1="12" x2="22" y2="12"/>
-              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-            </svg>
-          </div>
-          <h4>Network Solutions</h4>
-          <p>Enterprise networking, structured cabling, wireless infrastructure, and SD-WAN deployment for seamless connectivity.</p>
-          <a href="services.html#network" class="card-link">
-            Learn More
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- 4 · ABOUT PREVIEW                           -->
-  <!-- ═══════════════════════════════════════════ -->
-  <section class="section about-preview">
-    <div class="container">
-      <div class="grid grid-2" style="align-items:center; gap: 3rem;">
-        <!-- Left Column -->
-        <div class="reveal-left">
-          <span class="section-label">About Stacksol</span>
-          <h2>Building the <span class="text-gradient">Future of IT</span>, One Solution at a Time</h2>
-          <p>Established in <strong>September 2024</strong>, Stacksol Technologies Private Limited is a New Delhi-based company committed to delivering cutting-edge IT solutions, enterprise hardware, and professional services to businesses of all sizes.</p>
-          <p class="text-muted">As a registered <strong>Private Limited Company</strong> and authorized <strong>Government e-Marketplace (GeM) partner</strong>, we bridge the gap between innovation and reliability — serving both private enterprises and government organisations with equal excellence.</p>
-          <div style="margin-top: 1.5rem;">
-            <a href="about.html" class="btn btn-primary btn-ripple">
-              More About Us
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
-            </a>
-          </div>
-          <!-- Floating Badge -->
-          <div class="floating-badge" style="display:inline-flex; align-items:center; gap:.5rem; margin-top:1.5rem; padding:.75rem 1.25rem; border-radius:50px; background:rgba(78,224,194,.1); border:1px solid rgba(78,224,194,.25); color:#4ee0c2; font-size:.85rem; font-weight:600;">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4ee0c2" stroke-width="2" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            GeM Registered Partner
-          </div>
-        </div>
-
-        <!-- Right Column — Image Placeholder -->
-        <div class="reveal-right">
-          <div style="width:100%; height:280px; border-radius:16px; background:linear-gradient(135deg, #0a1628 0%, #0f3460 50%, #1b6b8a 100%); display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; box-shadow: 0 20px 60px rgba(0,0,0,.3);">
-            <div style="position:absolute;inset:0;background:radial-gradient(circle at 70% 30%, rgba(78,224,194,.15) 0%, transparent 60%);"></div>
-            <div style="text-align:center; position:relative; z-index:1;">
-              <div style="font-size:2.5rem; font-weight:800; color:#fff; letter-spacing:2px;">STACK<span style="color:#4ee0c2;">SOL</span></div>
-              <div style="font-size:.85rem; color:rgba(255,255,255,.5); margin-top:.5rem; letter-spacing:3px; text-transform:uppercase;">Technologies</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- 5 · WHY CHOOSE US                           -->
-  <!-- ═══════════════════════════════════════════ -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Why Choose Us</span>
-        <h2>The Stacksol <span class="text-gradient">Advantage</span></h2>
-        <p class="text-muted">We combine deep technical expertise with an unwavering commitment to client success.</p>
-      </div>
-
-      <div class="features-grid stagger-children">
-        <!-- Certified Experts -->
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="8" r="5"/>
-              <path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12"/>
-            </svg>
-          </div>
-          <h4>Certified Experts</h4>
-          <p>Industry-certified professionals with deep expertise across leading technology platforms.</p>
-        </div>
-
-        <!-- 24/7 Support -->
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"/>
-              <polyline points="12 6 12 12 16 14"/>
-            </svg>
-          </div>
-          <h4>24/7 Support</h4>
-          <p>Round-the-clock technical assistance ensuring your business never faces downtime.</p>
-        </div>
-
-        <!-- GST Registered -->
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-              <polyline points="14 2 14 8 20 8"/>
-              <line x1="16" y1="13" x2="8" y2="13"/>
-              <line x1="16" y1="17" x2="8" y2="17"/>
-              <polyline points="10 9 9 9 8 9"/>
-            </svg>
-          </div>
-          <h4>GST Registered</h4>
-          <p>Fully compliant and GST-registered, ensuring transparent and hassle-free transactions.</p>
-        </div>
-
-        <!-- Competitive Pricing -->
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="12" y1="1" x2="12" y2="23"/>
-              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-            </svg>
-          </div>
-          <h4>Competitive Pricing</h4>
-          <p>Best-in-class pricing through strong OEM partnerships and volume procurement power.</p>
-        </div>
-
-        <!-- Quick Delivery -->
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
-            </svg>
-          </div>
-          <h4>Quick Delivery</h4>
-          <p>Rapid procurement and deployment with streamlined supply-chain logistics.</p>
-        </div>
-
-        <!-- Trusted Partners -->
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-              <circle cx="9" cy="7" r="4"/>
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-            </svg>
-          </div>
-          <h4>Trusted Partners</h4>
-          <p>Official partnerships with 50+ global technology leaders and OEMs.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- 6 · PRODUCTS SHOWCASE                       -->
-  <!-- ═══════════════════════════════════════════ -->
+  <!-- MANIFESTO -->
   <section class="section">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Our Products</span>
-        <h2>Premium <span class="text-gradient">Hardware</span> Solutions</h2>
-        <p class="text-muted">Enterprise-grade hardware from the world's leading manufacturers, tailored for your business needs.</p>
+    <div class="container manifesto__grid">
+      <div class="manifesto__meta">
+        <span class="eyebrow" data-reveal>Who we are</span>
+        <span class="mono muted" data-reveal style="--d:100ms">Est. 2024 · New Delhi</span>
       </div>
-
-      <div class="products-scroll reveal">
-        <!-- Laptops -->
-        <div class="product-card">
-          <div style="width:100%;height:200px;border-radius:12px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);display:flex;align-items:center;justify-content:center;">
-            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.8)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-              <line x1="2" y1="20" x2="22" y2="20"/>
-            </svg>
-          </div>
-          <h4>Laptops</h4>
-        </div>
-
-        <!-- Desktops -->
-        <div class="product-card">
-          <div style="width:100%;height:200px;border-radius:12px;background:linear-gradient(135deg,#f093fb 0%,#f5576c 100%);display:flex;align-items:center;justify-content:center;">
-            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.8)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-              <line x1="8" y1="21" x2="16" y2="21"/>
-              <line x1="12" y1="17" x2="12" y2="21"/>
-            </svg>
-          </div>
-          <h4>Desktops</h4>
-        </div>
-
-        <!-- Servers -->
-        <div class="product-card">
-          <div style="width:100%;height:200px;border-radius:12px;background:linear-gradient(135deg,#4facfe 0%,#00f2fe 100%);display:flex;align-items:center;justify-content:center;">
-            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.8)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
-              <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
-              <line x1="6" y1="6" x2="6.01" y2="6"/>
-              <line x1="6" y1="18" x2="6.01" y2="18"/>
-            </svg>
-          </div>
-          <h4>Servers</h4>
-        </div>
-
-        <!-- Data Storage -->
-        <div class="product-card">
-          <div style="width:100%;height:200px;border-radius:12px;background:linear-gradient(135deg,#43e97b 0%,#38f9d7 100%);display:flex;align-items:center;justify-content:center;">
-            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.8)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-              <ellipse cx="12" cy="5" rx="9" ry="3"/>
-              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
-              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
-            </svg>
-          </div>
-          <h4>Data Storage</h4>
-        </div>
-
-        <!-- Workstations -->
-        <div class="product-card">
-          <div style="width:100%;height:200px;border-radius:12px;background:linear-gradient(135deg,#fa709a 0%,#fee140 100%);display:flex;align-items:center;justify-content:center;">
-            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.8)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="4" y="4" width="16" height="16" rx="2"/>
-              <rect x="9" y="9" width="6" height="6"/>
-              <line x1="9" y1="1" x2="9" y2="4"/>
-              <line x1="15" y1="1" x2="15" y2="4"/>
-              <line x1="9" y1="20" x2="9" y2="23"/>
-              <line x1="15" y1="20" x2="15" y2="23"/>
-              <line x1="20" y1="9" x2="23" y2="9"/>
-              <line x1="20" y1="14" x2="23" y2="14"/>
-              <line x1="1" y1="9" x2="4" y2="9"/>
-              <line x1="1" y1="14" x2="4" y2="14"/>
-            </svg>
-          </div>
-          <h4>Workstations</h4>
-        </div>
-
-        <!-- Networking Products -->
-        <div class="product-card">
-          <div style="width:100%;height:200px;border-radius:12px;background:linear-gradient(135deg,#a18cd1 0%,#fbc2eb 100%);display:flex;align-items:center;justify-content:center;">
-            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.8)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
-              <path d="M1.42 9a16 16 0 0 1 21.16 0"/>
-              <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
-              <line x1="12" y1="20" x2="12.01" y2="20"/>
-            </svg>
-          </div>
-          <h4>Networking Products</h4>
+      <div>
+        <p class="manifesto__text" data-fill>We exist to change how businesses harness technology — pairing <span class="serif">innovation</span> with reliability, and treating every client's uptime as if it were our own.</p>
+        <div class="flex gap wrap mt-l" data-reveal>
+          <a href="about.html" class="btn btn--ghost" data-magnetic="0.2"><span class="btn-label">Our story</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- 7 · GEM PARTNER BANNER                      -->
-  <!-- ═══════════════════════════════════════════ -->
-  <section class="gem-banner reveal">
-    <div class="container">
-      <div class="gem-banner-content">
-        <div class="gem-banner-icon">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/>
-            <line x1="4" y1="22" x2="4" y2="15"/>
-          </svg>
+  <!-- SOLUTIONS (horizontal pinned) -->
+  <section class="hscroll" id="solutions">
+    <div class="hscroll__pin">
+      <div class="hscroll__track">
+        <div class="sol sol--intro">
+          <span class="eyebrow">Solutions · 07</span>
+          <h2 class="display-m" style="margin:24px 0 20px">Every layer of your <span class="serif accent">IT&nbsp;stack</span>, covered.</h2>
+          <p class="muted">Seven practices, one accountable partner. Scroll to explore.</p>
+          <span class="mono muted swipe-hint mt-s">Swipe →</span>
         </div>
-        <div class="gem-banner-text">
-          <h3>Authorized GeM Partner</h3>
-          <p>Registered on Government e-Marketplace for seamless government procurement</p>
-          <span class="gem-gstin">GSTIN: 07ABNCS9084P1Z6</span>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- 8 · TECHNOLOGY PARTNERS MARQUEE             -->
-  <!-- ═══════════════════════════════════════════ -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Our Ecosystem</span>
-        <h2>Our Technology <span class="text-gradient">Partners</span></h2>
-      </div>
-    </div>
-
-    <div class="marquee-wrapper reveal">
-      <div class="marquee-track">
-        <div class="marquee-item">HP</div>
-        <div class="marquee-item">Dell</div>
-        <div class="marquee-item">Lenovo</div>
-        <div class="marquee-item">Cisco</div>
-        <div class="marquee-item">Microsoft</div>
-        <div class="marquee-item">Oracle</div>
-        <div class="marquee-item">VMware</div>
-        <div class="marquee-item">Fortinet</div>
-        <div class="marquee-item">Red Hat</div>
-        <div class="marquee-item">Palo Alto</div>
-        <div class="marquee-item">IBM</div>
-        <div class="marquee-item">NetApp</div>
-        <div class="marquee-item">Juniper</div>
-        <div class="marquee-item">Aruba</div>
-        <div class="marquee-item">SonicWall</div>
-        <div class="marquee-item">D-Link</div>
-        <!-- Duplicate set for seamless infinite scroll -->
-        <div class="marquee-item">HP</div>
-        <div class="marquee-item">Dell</div>
-        <div class="marquee-item">Lenovo</div>
-        <div class="marquee-item">Cisco</div>
-        <div class="marquee-item">Microsoft</div>
-        <div class="marquee-item">Oracle</div>
-        <div class="marquee-item">VMware</div>
-        <div class="marquee-item">Fortinet</div>
-        <div class="marquee-item">Red Hat</div>
-        <div class="marquee-item">Palo Alto</div>
-        <div class="marquee-item">IBM</div>
-        <div class="marquee-item">NetApp</div>
-        <div class="marquee-item">Juniper</div>
-        <div class="marquee-item">Aruba</div>
-        <div class="marquee-item">SonicWall</div>
-        <div class="marquee-item">D-Link</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- 9 · CTA SECTION                             -->
-  <!-- ═══════════════════════════════════════════ -->
-  <section class="cta-section reveal">
-    <div class="container">
-      <div class="cta-content">
-        <h2>Ready to Transform Your <span class="text-gradient">IT Infrastructure</span>?</h2>
-        <p>Partner with Stacksol Technologies for reliable, innovative, and cost-effective IT solutions.</p>
-        <a href="contact.html" class="btn btn-accent btn-lg btn-ripple magnetic-wrap">
-          Get Started Today
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+        <a href="services.html#endpoint" class="sol" data-cursor="Explore">
+          <div class="sol__num"><span>01</span><span>Hardware</span></div>
+          <span class="sol__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+          <div class="sol__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/></svg></div>
+          <h3>Endpoint Solutions</h3>
+          <p>Laptops, desktops, workstations and servers from leading OEMs — sourced, imaged, deployed and managed across their lifecycle.</p>
+          <div class="sol__tags"><span>Laptops</span><span>Workstations</span><span>Servers</span></div>
+        </a>
+        <a href="services.html#printing" class="sol" data-cursor="Explore">
+          <div class="sol__num"><span>02</span><span>Operations</span></div>
+          <span class="sol__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+          <div class="sol__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8" rx="1"/></svg></div>
+          <h3>Managed Printing</h3>
+          <p>Streamlined print fleets that cost less — hardware, software, supply replenishment and maintenance handled end-to-end.</p>
+          <div class="sol__tags"><span>Fleet audit</span><span>Supplies</span><span>MPS</span></div>
+        </a>
+        <a href="services.html#cybersecurity" class="sol" data-cursor="Explore">
+          <div class="sol__num"><span>03</span><span>Security</span></div>
+          <span class="sol__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+          <div class="sol__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <h3>Cybersecurity</h3>
+          <p>Layered protection tailored to your risk profile — threat detection, VAPT, firewalls, endpoint security and data protection.</p>
+          <div class="sol__tags"><span>VAPT</span><span>Firewall</span><span>EDR</span></div>
+        </a>
+        <a href="services.html#cloud" class="sol" data-cursor="Explore">
+          <div class="sol__num"><span>04</span><span>Cloud</span></div>
+          <span class="sol__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+          <div class="sol__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg></div>
+          <h3>Cloud Solutions</h3>
+          <p>Migration, hosting and SaaS on Azure, AWS or hybrid — architected to drive agility while keeping costs in check.</p>
+          <div class="sol__tags"><span>Azure</span><span>AWS</span><span>Hybrid</span></div>
+        </a>
+        <a href="services.html#network" class="sol" data-cursor="Explore">
+          <div class="sol__num"><span>05</span><span>Connectivity</span></div>
+          <span class="sol__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+          <div class="sol__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"/><path d="M12 12V8"/></svg></div>
+          <h3>Network Solutions</h3>
+          <p>Design, implementation, optimisation and management of wired, wireless, VPN and software-defined networks.</p>
+          <div class="sol__tags"><span>LAN / WAN</span><span>Wi-Fi</span><span>SD-WAN</span></div>
+        </a>
+        <a href="services.html#enterprise" class="sol" data-cursor="Explore">
+          <div class="sol__num"><span>06</span><span>Platforms</span></div>
+          <span class="sol__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+          <div class="sol__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg></div>
+          <h3>Enterprise Solutions</h3>
+          <p>ERP, collaboration platforms and enterprise storage that unify operations and help teams work smarter.</p>
+          <div class="sol__tags"><span>ERP</span><span>Collaboration</span><span>Backup</span></div>
+        </a>
+        <a href="services.html#consulting" class="sol" data-cursor="Explore">
+          <div class="sol__num"><span>07</span><span>Advisory</span></div>
+          <span class="sol__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+          <div class="sol__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-1.8 5.4a2 2 0 0 1-1.28 1.28l-5.4 1.8 1.8-5.4a2 2 0 0 1 1.28-1.28z"/></svg></div>
+          <h3>IT Consulting</h3>
+          <p>Assessments, roadmaps and transformation advisory that turn technology spend into measurable business value.</p>
+          <div class="sol__tags"><span>Strategy</span><span>Audit</span><span>Roadmap</span></div>
+        </a>
+        <a href="contact.html" class="sol sol--end" data-cursor="Let's talk">
+          <span class="mono">Not sure where to start?</span>
+          <h3>Let's map your stack together.</h3>
+          <p>A free consultation with our solutions team — no obligation.</p>
+          <span class="btn btn--ink" style="align-self:flex-start"><span class="btn-label">Book a call</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
         </a>
       </div>
+      <div class="hscroll__prog"><i></i></div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- FOOTER                                      -->
-  <!-- ═══════════════════════════════════════════ -->
-  <footer class="footer">
+  <!-- STATS -->
+  <section class="section section--paper">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="logo">
-            <div class="logo-icon">
-              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 16C8 11.58 11.58 8 16 8h8c4.42 0 8 3.58 8 8v0c0 4.42-3.58 8-8 8h-8c-4.42 0-8 3.58-8 8v0c0 4.42 3.58 8 8 8h8c4.42 0 8-3.58 8-8" stroke="#4ee0c2" stroke-width="3" stroke-linecap="round"/>
-                <circle cx="28" cy="16" r="3" fill="#4ee0c2"/>
-                <circle cx="12" cy="32" r="3" fill="#1b6b8a"/>
-              </svg>
-            </div>
-            STACK<span>SOL</span>
-          </a>
-          <p>Your trusted partner for innovative IT solutions, hardware, and services. Empowering businesses with technology that drives growth.</p>
-          <div class="footer-social">
-            <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
-            <a href="#" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-1.1.7-2.2 1A4.8 4.8 0 0 0 12 8v1A10 10 0 0 1 3 4s-4 9 5 13a11.6 11.6 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.7 7.7 0 0 0 22 4z"/></svg></a>
-            <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-          </div>
+      <div class="shead">
+        <div class="shead__l">
+          <span class="eyebrow" data-reveal>By the numbers</span>
+          <h2 class="display-l" data-split>Momentum you can <span class="serif">measure.</span></h2>
         </div>
-        <div class="footer-col">
-          <h5>Quick Links</h5>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="team.html">Our Team</a></li>
-            <li><a href="order.html">Order Online</a></li>
-          </ul>
+        <p class="lead muted" data-reveal>A young company with a seasoned playbook — built on OEM relationships, disciplined delivery and support that picks up the phone.</p>
+      </div>
+      <div class="stats" data-stagger="120">
+        <div class="stat" data-reveal><div class="stat__n"><span data-count="100">0</span><sup>+</sup></div><div class="stat__l">Clients served across sectors</div></div>
+        <div class="stat" data-reveal><div class="stat__n"><span data-count="500">0</span><sup>+</sup></div><div class="stat__l">Projects &amp; deployments delivered</div></div>
+        <div class="stat" data-reveal><div class="stat__n"><span data-count="50">0</span><sup>+</sup></div><div class="stat__l">Technology &amp; OEM partners</div></div>
+        <div class="stat" data-reveal><div class="stat__n"><span data-count="24">0</span><sup>/7</sup></div><div class="stat__l">Support, every day of the year</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES GRID -->
+  <section class="section">
+    <div class="container">
+      <div class="shead">
+        <div class="shead__l">
+          <span class="eyebrow" data-reveal>Specialised services</span>
+          <h2 class="display-l" data-split>Hands on, <span class="serif accent">end to end.</span></h2>
         </div>
-        <div class="footer-col">
-          <h5>Solutions</h5>
-          <ul>
-            <li><a href="services.html#endpoint">Endpoint Solutions</a></li>
-            <li><a href="services.html#cloud">Cloud Solutions</a></li>
-            <li><a href="services.html#cybersecurity">Cybersecurity</a></li>
-            <li><a href="services.html#network">Network Solutions</a></li>
-            <li><a href="services.html#enterprise">Enterprise Solutions</a></li>
-            <li><a href="services.html#consulting">Consulting</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h5>Contact Info</h5>
-          <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span>First Floor, H. No.-G-275, Gali No.-13, Block-G, Molarband Extn., Badarpur, New Delhi-110044</span>
-          </div>
-          <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.68 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.74.32 1.53.55 2.34.68a2 2 0 0 1 1.72 2v0z"/></svg>
-            <span>+91-9319596653</span>
-          </div>
-          <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <span>dhruv.sandilya2005@gmail.com</span>
-          </div>
-          <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-            <span>GSTIN: 07ABNCS9084P1Z6</span>
-          </div>
+        <a href="services.html#services" class="btn btn--ghost" data-reveal data-magnetic="0.2"><span class="btn-label">All services</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>
+      </div>
+      <div class="grid g-3" data-stagger="90">
+        <a href="services.html#services" class="card" data-reveal data-tilt="5"><span class="card__num">/01</span><div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><h3>IT Installation</h3><p>Deployment, setup and configuration for offices, campuses and enterprise sites — done right the first time.</p></a>
+        <a href="services.html#services" class="card" data-reveal data-tilt="5"><span class="card__num">/02</span><div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01M6 18h.01"/></svg></div><h3>Data Centre Services</h3><p>Rack provisioning, power, cooling and migration — resilient facilities engineered for uptime.</p></a>
+        <a href="services.html#services" class="card" data-reveal data-tilt="5"><span class="card__num">/03</span><div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 14 4 4-4 4"/><path d="m18 2 4 4-4 4"/><path d="M2 18h1.97a4 4 0 0 0 3.3-1.7l5.45-8.6a4 4 0 0 1 3.3-1.7H22"/><path d="M2 6h1.97a4 4 0 0 1 3.3 1.7l.33.52"/><path d="M22 18h-5.95a4 4 0 0 1-3.3-1.7l-.33-.52"/></svg></div><h3>Data Migration</h3><p>Secure, verified transfers to new servers or the cloud with minimal downtime and full integrity.</p></a>
+        <a href="services.html#services" class="card" data-reveal data-tilt="5"><span class="card__num">/04</span><div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></svg></div><h3>Infrastructure Services</h3><p>Structured cabling to server-room design — the backbone your entire ecosystem depends on.</p></a>
+        <a href="services.html#services" class="card" data-reveal data-tilt="5"><span class="card__num">/05</span><div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg></div><h3>Annual Maintenance</h3><p>AMC plans with priority response, preventive maintenance and a dedicated support desk.</p></a>
+        <a href="services.html#services" class="card" data-reveal data-tilt="5"><span class="card__num">/06</span><div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h20"/><path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"/><path d="m7 21 5-5 5 5"/></svg></div><h3>Smart Classes</h3><p>Interactive panels, AV systems and digital content that transform how students learn.</p></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="shead">
+        <div class="shead__l">
+          <span class="eyebrow" data-reveal>How we work</span>
+          <h2 class="display-l" data-split>From first call to <span class="serif accent">always-on.</span></h2>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 Stacksol Technologies Pvt. Ltd. All Rights Reserved.</p>
-        <p>Designed with precision &amp; passion</p>
+      <div class="process">
+        <div class="process__line"><i></i></div>
+        <div class="step" style="--i:0"><div class="step__dot">01</div><h3>Discover</h3><p>We audit your environment, goals and constraints — budget, compliance and timelines.</p></div>
+        <div class="step" style="--i:1"><div class="step__dot">02</div><h3>Design</h3><p>A right-sized architecture and bill of materials, with transparent, competitive pricing.</p></div>
+        <div class="step" style="--i:2"><div class="step__dot">03</div><h3>Procure</h3><p>OEM-direct sourcing — private purchase or GeM — with complete documentation.</p></div>
+        <div class="step" style="--i:3"><div class="step__dot">04</div><h3>Deploy</h3><p>Installation, configuration and migration by certified engineers, on schedule.</p></div>
+        <div class="step" style="--i:4"><div class="step__dot">05</div><h3>Support</h3><p>AMC, monitoring and a 24/7 helpdesk that keeps everything running.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="shead">
+        <div class="shead__l">
+          <span class="eyebrow" data-reveal>Industries</span>
+          <h2 class="display-l" data-split>Trusted where it <span class="serif accent">matters.</span></h2>
+        </div>
+        <p class="lead" data-reveal>Sector-specific know-how, from procurement rules to security standards.</p>
+      </div>
+      <div class="ind">
+        <a href="portfolio.html" class="ind__row" data-reveal data-cursor="View work"><span class="ind__n">01</span><span class="ind__t">Government</span><span class="ind__d">GeM-compliant procurement, bulk hardware and secure cloud for departments & PSUs.</span></a>
+        <a href="portfolio.html" class="ind__row" data-reveal data-cursor="View work"><span class="ind__n">02</span><span class="ind__t">Education</span><span class="ind__d">Smart classrooms, campus Wi-Fi and computer labs that scale.</span></a>
+        <a href="portfolio.html" class="ind__row" data-reveal data-cursor="View work"><span class="ind__n">03</span><span class="ind__t">Banking &amp; Finance</span><span class="ind__d">Endpoint security, compliance-ready networks and resilient data centres.</span></a>
+        <a href="portfolio.html" class="ind__row" data-reveal data-cursor="View work"><span class="ind__n">04</span><span class="ind__t">Healthcare</span><span class="ind__d">Reliable infrastructure and data protection for always-on care.</span></a>
+        <a href="portfolio.html" class="ind__row" data-reveal data-cursor="View work"><span class="ind__n">05</span><span class="ind__t">Enterprise &amp; SMEs</span><span class="ind__d">Full-stack IT for growing teams — without the enterprise overhead.</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US (BENTO) -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="shead">
+        <div class="shead__l">
+          <span class="eyebrow" data-reveal>Why Stacksol</span>
+          <h2 class="display-l" data-split>The <span class="serif accent">advantage</span>, in six parts.</h2>
+        </div>
+      </div>
+      <div class="bento" data-stagger="80">
+        <div class="card card--grad b-wide b-tall" data-reveal>
+          <div>
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <h3 style="font-size:clamp(1.8rem,3vw,2.8rem);max-width:14ch">Direct partnerships with global OEMs.</h3>
+            <p style="max-width:44ch">Relationships with 50+ technology leaders mean genuine products, warranty-backed supply and pricing others can't match.</p>
+          </div>
+          <div class="orbit" aria-hidden="true"><span></span><span></span><span></span><b></b></div>
+        </div>
+        <div class="card card--accent" data-reveal>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 22h18"/><path d="M6 18v-7M10 18v-7M14 18v-7M18 18v-7"/><path d="m12 2 8 5H4z"/></svg></div>
+          <div><h3>GeM registered</h3><p>Authorised seller on the Government e-Marketplace for compliant public procurement.</p></div>
+        </div>
+        <div class="card" data-reveal>
+          <div class="b-big grad">24/7</div>
+          <div><h3>Always-on support</h3><p>Round-the-clock help so downtime never waits for office hours.</p></div>
+        </div>
+        <div class="card" data-reveal>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></svg></div>
+          <div><h3>Certified experts</h3><p>Engineers certified across leading platforms and vendors.</p></div>
+        </div>
+        <div class="card" data-reveal>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.59 2.59A2 2 0 0 0 11.17 2H4a2 2 0 0 0-2 2v7.17a2 2 0 0 0 .59 1.42l8.7 8.7a2.43 2.43 0 0 0 3.42 0l6.58-6.58a2.43 2.43 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg></div>
+          <div><h3>Competitive pricing</h3><p>Volume procurement power, transparent quotes, no hidden costs.</p></div>
+        </div>
+        <div class="card" data-reveal>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg></div>
+          <div><h3>Quick delivery</h3><p>Streamlined logistics with installation support across India.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <!-- Placeholder testimonials: replace with real client quotes before launch. -->
+  <section class="section section--tight" style="background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="container testi">
+      <div>
+        <span class="eyebrow" data-reveal>Client voices</span>
+        <h2 class="display-m mt-m" data-split>Words from the <span class="serif accent">people</span> we serve.</h2>
+        <div class="testi__nav">
+          <button class="testi__btn" data-prev aria-label="Previous testimonial"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg></button>
+          <button class="testi__btn" data-next aria-label="Next testimonial"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+          <span class="testi__count">01 / 03</span>
+        </div>
+        <div class="testi__bar"><i></i></div>
+      </div>
+      <div class="testi__stage" aria-live="polite">
+        <div class="quote-mark" aria-hidden="true">“</div>
+        <div class="testi__item active">
+          <p class="testi__q">Stacksol handled our data centre and infrastructure refresh end to end — servers, storage, security. Operations are measurably smoother, and support is always a call away.</p>
+          <div class="testi__who"><span class="avatar">IT</span><div><strong>Head of IT</strong><span>Manufacturing enterprise, NCR</span></div></div>
+        </div>
+        <div class="testi__item">
+          <p class="testi__q">Their smart class rollout changed how our teachers teach. Interactive panels, content and training — delivered on time across every campus.</p>
+          <div class="testi__who"><span class="avatar">PR</span><div><strong>Principal</strong><span>K-12 school group</span></div></div>
+        </div>
+        <div class="testi__item">
+          <p class="testi__q">GeM procurement used to mean delays and paperwork. Stacksol made it predictable — correct specs, full documentation and fast delivery.</p>
+          <div class="testi__who"><span class="avatar">PO</span><div><strong>Procurement Officer</strong><span>Government department</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIG MARQUEE -->
+  <div class="marquee marquee--big" data-marquee="1" data-dir="right" aria-hidden="true">
+    <div class="marquee__track">
+      <div class="marquee__group">
+        <span class="marquee__item">Design</span><span class="marquee__item fill">Supply</span><span class="marquee__item">Secure</span><span class="marquee__item fill">Support</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="cta__grid" aria-hidden="true"></div>
+    <div class="cta__bg" aria-hidden="true"></div>
+    <div class="container">
+      <span class="eyebrow" data-reveal>Start a project</span>
+      <h2 class="display-xl cta__title" data-split>Let's build your <span class="serif">stack.</span></h2>
+      <div data-reveal="scale"><a href="contact.html" class="circle-btn" data-magnetic="0.45"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>Get in touch</span></a></div>
+    </div>
+  </section>
+
+</main>
+
+  <footer class="ftr">
+    <div class="container">
+      <div class="ftr__top">
+        <div class="ftr__about">
+          <a href="index.html" class="logo"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+  <rect x="6" y="6" width="28" height="7" rx="3.5" fill="#4ee0c2"/>
+  <rect x="6" y="16.5" width="28" height="7" rx="3.5" fill="#4ee0c2" fill-opacity=".55"/>
+  <rect x="6" y="27" width="18" height="7" rx="3.5" fill="#4f7cff"/>
+  <circle cx="30.5" cy="30.5" r="3.5" fill="#eef1f6"/>
+</svg><span>STACK<b>SOL</b></span></a>
+          <p>End-to-end IT solutions, enterprise hardware and professional services — engineered for businesses and government organisations across India.</p>
+          <div class="socials">
+            <a href="https://wa.me/919319596653" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg></a>
+            <a href="mailto:dhruv.sandilya2005@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+            <a href="tel:+919319596653" aria-label="Call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="portfolio.html">Our work</a></li>
+            <li><a href="team.html">Leadership</a></li>
+            <li><a href="order.html">Order online</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Solutions</h4>
+          <ul>
+            <li><a href="services.html#endpoint">Endpoint Solutions</a></li>
+            <li><a href="services.html#printing">Managed Printing</a></li>
+            <li><a href="services.html#cybersecurity">Cybersecurity</a></li>
+            <li><a href="services.html#cloud">Cloud Solutions</a></li>
+            <li><a href="services.html#network">Network Solutions</a></li>
+            <li><a href="services.html#enterprise">Enterprise Solutions</a></li>
+            <li><a href="services.html#consulting">IT Consulting</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Reach us</h4>
+          <ul class="ftr__contact">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><span>First Floor, H. No. G-275, Gali No. 13, Block-G, Molarband Extn., Badarpur, New Delhi – 110044</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+919319596653">+91-9319596653</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:dhruv.sandilya2005@gmail.com">dhruv.sandilya2005@gmail.com</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8M16 13H8M16 17H8"/></svg><span>GSTIN: 07ABNCS9084P1Z6</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="ftr__word" data-split="chars" aria-hidden="true">STACKSOL</div>
+    <div class="container">
+      <div class="ftr__bottom">
+        <span>© <span data-year>2026</span> Stacksol Technologies Pvt. Ltd. All rights reserved.</span>
+        <span>New Delhi · <span data-clock>--:--</span> IST</span>
+        <a href="#" class="to-top link-u" data-top>Back to top ↑</a>
       </div>
     </div>
   </footer>
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- FLOATING ACTIONS + BACK TO TOP              -->
-  <!-- ═══════════════════════════════════════════ -->
-  <div class="float-actions">
-    <a href="https://wa.me/919319596653?text=Hi!%20I%20visited%20your%20website%20and%20would%20like%20to%20know%20more." class="float-btn float-btn-whatsapp" target="_blank" aria-label="WhatsApp">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    </a>
-    <a href="tel:+919319596653" class="float-btn float-btn-phone" aria-label="Call Us">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.68 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.74.32 1.53.55 2.34.68a2 2 0 0 1 1.72 2v0z"/></svg>
-    </a>
-  </div>
+  <a href="https://wa.me/919319596653?text=Hi!%20I%20visited%20your%20website%20and%20would%20like%20to%20know%20more." class="fab" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg></a>
 
-  <button class="back-to-top" aria-label="Back to top">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 15l-6-6-6 6"/></svg>
-  </button>
-
+  <script src="js/vendor/gsap.min.js" defer></script>
+  <script src="js/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="js/vendor/lenis.min.js" defer></script>
   <script src="js/main.js" defer></script>
 </body>
 </html>

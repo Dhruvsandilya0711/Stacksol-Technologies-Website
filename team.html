@@ -3,623 +3,225 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Team — Stacksol Technologies | Leadership &amp; Vision</title>
-  <meta name="description" content="Meet the leadership team behind Stacksol Technologies. Our directors Dhruv Sandilya and Pravesh Kumar Pathak drive innovation in IT solutions, hardware, and government procurement.">
-  <meta name="keywords" content="Stacksol Technologies team, leadership, Dhruv Sandilya, Pravesh Kumar Pathak, IT company directors">
+  <title>Leadership & Team — Stacksol Technologies</title>
+  <meta name="description" content="Meet the directors and the culture behind Stacksol Technologies — and explore careers with a fast-growing New Delhi IT solutions company.">
+  <meta name="theme-color" content="#06070b">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Leadership & Team — Stacksol Technologies">
+  <meta property="og:description" content="Meet the directors and the culture behind Stacksol Technologies — and explore careers with a fast-growing New Delhi IT solutions company.">
+  <meta property="og:site_name" content="Stacksol Technologies">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%2306070b'/%3E%3Crect x='8' y='8' width='24' height='6' rx='3' fill='%234ee0c2'/%3E%3Crect x='8' y='17' width='24' height='6' rx='3' fill='%234ee0c2' fill-opacity='.55'/%3E%3Crect x='8' y='26' width='15' height='6' rx='3' fill='%234f7cff'/%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/Syne-normal-500-800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Manrope-normal-300-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/animations.css">
-  <script src="js/main.js" defer></script>
-
-  <style>
-    /* ========== Director-Level Premium Cards ========== */
-    .directors-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: var(--space-3xl);
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    .director-card {
-      background: rgba(17, 24, 39, 0.5);
-      backdrop-filter: blur(24px);
-      -webkit-backdrop-filter: blur(24px);
-      border: 1px solid rgba(78, 224, 194, 0.12);
-      border-radius: var(--radius-xl);
-      padding: var(--space-3xl) var(--space-2xl);
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    /* Animated gradient border glow */
-    .director-card::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      border-radius: inherit;
-      padding: 1.5px;
-      background: linear-gradient(135deg, rgba(78, 224, 194, 0.3), transparent 40%, transparent 60%, rgba(27, 107, 138, 0.3));
-      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-      -webkit-mask-composite: xor;
-      mask-composite: exclude;
-      opacity: 0.6;
-      transition: opacity 0.5s ease;
-    }
-
-    /* Ambient glow behind card */
-    .director-card::after {
-      content: '';
-      position: absolute;
-      top: -40%;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(ellipse at center, rgba(78, 224, 194, 0.06), transparent 60%);
-      pointer-events: none;
-      transition: all 0.5s ease;
-    }
-
-    .director-card:hover {
-      transform: translateY(-12px);
-      border-color: rgba(78, 224, 194, 0.25);
-      box-shadow:
-        0 0 40px rgba(78, 224, 194, 0.12),
-        0 20px 60px rgba(0, 0, 0, 0.4);
-    }
-
-    .director-card:hover::before {
-      opacity: 1;
-    }
-
-    .director-card:hover::after {
-      background: radial-gradient(ellipse at center, rgba(78, 224, 194, 0.1), transparent 60%);
-    }
-
-    /* Avatar placeholder with initials */
-    .director-avatar {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      margin: 0 auto var(--space-xl);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: var(--font-heading);
-      font-size: 2.8rem;
-      font-weight: 700;
-      color: #fff;
-      position: relative;
-      z-index: 1;
-      transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-    }
-
-    .director-avatar-ds {
-      background: linear-gradient(135deg, #1b6b8a, #4ee0c2);
-      box-shadow:
-        0 0 0 4px rgba(78, 224, 194, 0.15),
-        0 0 30px rgba(78, 224, 194, 0.2),
-        0 8px 30px rgba(0, 0, 0, 0.3);
-    }
-
-    .director-avatar-pp {
-      background: linear-gradient(135deg, #4ee0c2, #2490b5);
-      box-shadow:
-        0 0 0 4px rgba(36, 144, 181, 0.15),
-        0 0 30px rgba(36, 144, 181, 0.2),
-        0 8px 30px rgba(0, 0, 0, 0.3);
-    }
-
-    .director-card:hover .director-avatar {
-      transform: scale(1.08);
-      box-shadow:
-        0 0 0 6px rgba(78, 224, 194, 0.2),
-        0 0 50px rgba(78, 224, 194, 0.3),
-        0 12px 40px rgba(0, 0, 0, 0.4);
-    }
-
-    /* Ring animation around avatar */
-    .director-avatar-ring {
-      position: absolute;
-      inset: -8px;
-      border-radius: 50%;
-      border: 2px dashed rgba(78, 224, 194, 0.2);
-      animation: avatarRingSpin 20s linear infinite;
-    }
-
-    @keyframes avatarRingSpin {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-
-    .director-name {
-      font-family: var(--font-heading);
-      font-size: 1.6rem;
-      font-weight: 700;
-      color: var(--text-primary);
-      margin-bottom: 0.25rem;
-      position: relative;
-      z-index: 1;
-    }
-
-    .director-title {
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: var(--color-accent);
-      margin-bottom: var(--space-lg);
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      position: relative;
-      z-index: 1;
-    }
-
-    .director-title::after {
-      content: '';
-      display: block;
-      width: 40px;
-      height: 2px;
-      background: linear-gradient(90deg, var(--color-accent), transparent);
-      margin: var(--space-md) auto 0;
-      border-radius: 2px;
-    }
-
-    .director-bio {
-      font-size: 0.95rem;
-      color: var(--text-secondary);
-      line-height: 1.8;
-      margin-bottom: var(--space-xl);
-      position: relative;
-      z-index: 1;
-    }
-
-    .director-social {
-      display: flex;
-      justify-content: center;
-      gap: var(--space-sm);
-      position: relative;
-      z-index: 1;
-    }
-
-    .director-social a {
-      width: 40px;
-      height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: var(--radius-full);
-      background: rgba(78, 224, 194, 0.08);
-      border: 1px solid rgba(78, 224, 194, 0.15);
-      color: var(--text-secondary);
-      transition: all var(--transition-base);
-    }
-
-    .director-social a:hover {
-      background: var(--color-accent);
-      border-color: var(--color-accent);
-      color: var(--bg-dark);
-      transform: translateY(-3px);
-      box-shadow: 0 4px 15px rgba(78, 224, 194, 0.3);
-    }
-
-    /* Culture cards icon container */
-    .culture-icon {
-      width: 64px;
-      height: 64px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: var(--radius-md);
-      background: linear-gradient(135deg, rgba(27, 107, 138, 0.2), rgba(78, 224, 194, 0.1));
-      border: 1px solid rgba(78, 224, 194, 0.1);
-      margin-bottom: var(--space-lg);
-      transition: all var(--transition-base);
-    }
-
-    .culture-icon svg {
-      width: 30px;
-      height: 30px;
-      color: var(--color-accent);
-    }
-
-    .culture-card:hover .culture-icon {
-      background: linear-gradient(135deg, var(--color-primary), var(--color-accent-dark));
-      border-color: transparent;
-      transform: scale(1.1) rotate(-5deg);
-    }
-
-    .culture-card:hover .culture-icon svg {
-      color: #fff;
-    }
-
-    .culture-card h4 {
-      margin-bottom: var(--space-sm);
-    }
-
-    .culture-card p {
-      font-size: 0.95rem;
-      color: var(--text-muted);
-    }
-
-    /* Leadership intro */
-    .leadership-intro {
-      max-width: 700px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .leadership-intro p {
-      font-size: 1.15rem;
-      line-height: 1.9;
-    }
-
-    /* Join CTA */
-    .join-cta-card {
-      max-width: 700px;
-      margin: 0 auto;
-      text-align: center;
-      background: rgba(17, 24, 39, 0.5);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border: 1px solid rgba(78, 224, 194, 0.12);
-      border-radius: var(--radius-xl);
-      padding: var(--space-4xl) var(--space-2xl);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .join-cta-card::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle at center, rgba(27, 107, 138, 0.08), transparent 50%);
-      pointer-events: none;
-    }
-
-    .join-cta-card h2 {
-      margin-bottom: var(--space-md);
-      position: relative;
-    }
-
-    .join-cta-card p {
-      font-size: 1.05rem;
-      margin-bottom: var(--space-2xl);
-      position: relative;
-    }
-
-    .join-cta-card .btn {
-      position: relative;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      .directors-grid {
-        grid-template-columns: 1fr;
-        gap: var(--space-xl);
-      }
-
-      .director-card {
-        padding: var(--space-2xl) var(--space-lg);
-      }
-
-      .director-avatar {
-        width: 110px;
-        height: 110px;
-        font-size: 2.2rem;
-      }
-
-      .director-name {
-        font-size: 1.35rem;
-      }
-
-      .join-cta-card {
-        padding: var(--space-2xl) var(--space-lg);
-      }
-    }
-  </style>
+  <script>
+    (function (d) {
+      var r = d.documentElement; r.classList.add('js');
+      try { if (!sessionStorage.getItem('ss-visited')) r.classList.add('first'); } catch (e) {}
+      setTimeout(function () { if (!r.classList.contains('ready')) r.classList.add('ready', 'no-anim'); }, 6000);
+    })(document);
+  </script>
 </head>
-<body>
-
-  <!-- Preloader -->
-  <div class="preloader">
-    <div class="preloader-logo">STACK<span>SOL</span></div>
-    <div class="preloader-bar"></div>
+<body data-page="team">
+  <div class="loader" aria-hidden="true">
+    <div class="loader__top"><span>Stacksol Technologies</span><span>New Delhi · India</span></div>
+    <div class="loader__word"><span style="--i:0">S</span><span style="--i:1">T</span><span style="--i:2">A</span><span style="--i:3">C</span><span style="--i:4">K</span><span style="--i:5" class=a>S</span><span style="--i:6" class=a>O</span><span style="--i:7" class=a>L</span></div>
+    <div class="loader__bottom"><div class="loader__bar"><i></i></div><div class="loader__count">0</div></div>
   </div>
+  <div class="pt" aria-hidden="true"><div class="pt__col"></div><div class="pt__col"></div><div class="pt__col"></div><div class="pt__col"></div><div class="pt__col"></div><div class="pt__logo">STACK<span>SOL</span></div></div>
+  <div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><i></i></div>
 
-  <!-- Mobile Overlay -->
-  <div class="mobile-overlay"></div>
-
-  <!-- Header -->
-  <header class="header">
-    <div class="header-inner">
-      <a href="index.html" class="logo">
-        <div class="logo-icon">
-          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 16C8 11.58 11.58 8 16 8h8c4.42 0 8 3.58 8 8v0c0 4.42-3.58 8-8 8h-8c-4.42 0-8 3.58-8 8v0c0 4.42 3.58 8 8 8h8c4.42 0 8-3.58 8-8" stroke="#4ee0c2" stroke-width="3" stroke-linecap="round"/>
-            <circle cx="28" cy="16" r="3" fill="#4ee0c2"/>
-            <circle cx="12" cy="32" r="3" fill="#1b6b8a"/>
-          </svg>
-        </div>
-        STACK<span>SOL</span>
-      </a>
-      <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <div class="nav-dropdown">
-          <a href="services.html" class="nav-dropdown-toggle">Services
-            <svg viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </a>
-          <div class="nav-dropdown-menu">
-            <a href="services.html#endpoint">Endpoint Solutions</a>
-            <a href="services.html#cloud">Cloud Solutions</a>
-            <a href="services.html#cybersecurity">Cybersecurity Solutions</a>
-            <a href="services.html#network">Network Solutions</a>
-            <a href="services.html#enterprise">Enterprise Solutions</a>
-            <a href="services.html#consulting">Consulting Solutions</a>
+  <header class="hdr">
+    <div class="container hdr__in">
+      <a href="index.html" class="logo" aria-label="Stacksol Technologies — home"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+  <rect x="6" y="6" width="28" height="7" rx="3.5" fill="#4ee0c2"/>
+  <rect x="6" y="16.5" width="28" height="7" rx="3.5" fill="#4ee0c2" fill-opacity=".55"/>
+  <rect x="6" y="27" width="18" height="7" rx="3.5" fill="#4f7cff"/>
+  <circle cx="30.5" cy="30.5" r="3.5" fill="#eef1f6"/>
+</svg><span>STACK<b>SOL</b></span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="about.html" data-nav="about">About</a>
+        <div class="nav__dd">
+          <a href="services.html" data-nav="services">Solutions <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+          <div class="nav__menu">
+            <a href="services.html#endpoint"><strong>Endpoint Solutions</strong><span>Laptops, desktops, workstations & servers</span></a>
+            <a href="services.html#printing"><strong>Managed Printing</strong><span>Fleet, supplies & proactive maintenance</span></a>
+            <a href="services.html#cybersecurity"><strong>Cybersecurity</strong><span>Threat defence, VAPT & data protection</span></a>
+            <a href="services.html#cloud"><strong>Cloud Solutions</strong><span>Migration, Azure / AWS & hybrid</span></a>
+            <a href="services.html#network"><strong>Network Solutions</strong><span>LAN / WAN, wireless, VPN & SD-WAN</span></a>
+            <a href="services.html#enterprise"><strong>Enterprise Solutions</strong><span>ERP, collaboration & storage</span></a>
+            <a href="services.html#consulting"><strong>IT Consulting</strong><span>Strategy, roadmaps & audits</span></a>
+            <a href="services.html#services"><strong>Specialised Services</strong><span>Installation, data centre, AMC & more</span></a>
           </div>
         </div>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="team.html" class="active">Team</a>
-        <a href="order.html">Order Online</a>
-        <a href="contact.html" class="nav-cta">Contact Us</a>
+        <a href="portfolio.html" data-nav="portfolio">Work</a>
+        <a href="team.html" data-nav="team">Team</a>
+        <a href="order.html" data-nav="order">Order Online</a>
       </nav>
-      <button class="menu-toggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="hdr__cta">
+        <a href="contact.html" class="btn btn--primary" data-magnetic="0.25"><span class="btn-label">Let's talk</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>
+        <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      </div>
     </div>
   </header>
 
-  <main>
+  <div class="menu" aria-label="Mobile menu">
+    <nav class="menu__links">
+      <a href="index.html" data-nav="home"><span>Home</span></a>
+      <a href="about.html" data-nav="about"><span>About</span></a>
+      <a href="services.html" data-nav="services"><span>Solutions</span></a>
+      <a href="portfolio.html" data-nav="portfolio"><span>Work</span></a>
+      <a href="team.html" data-nav="team"><span>Team</span></a>
+      <a href="order.html" data-nav="order"><span>Order Online</span></a>
+      <a href="contact.html" data-nav="contact"><span>Contact</span></a>
+    </nav>
+    <div class="menu__foot">
+      <a href="tel:+919319596653">+91-9319596653</a>
+      <a href="mailto:dhruv.sandilya2005@gmail.com">dhruv.sandilya2005@gmail.com</a>
+      <span>New Delhi, India</span>
+    </div>
+  </div>
 
-    <!-- ====== Page Banner ====== -->
-    <section class="page-banner">
-      <div class="container">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="index.html">Home</a>
-          <span>/</span>
-          <span>Team</span>
-        </nav>
-        <h1>Our Leadership <span class="text-gradient">Team</span></h1>
-        <p>The visionary leaders driving Stacksol Technologies toward a future of innovation and excellence.</p>
-      </div>
-    </section>
+<main>
 
-    <!-- ====== Leadership Intro ====== -->
-    <section class="section">
-      <div class="container">
-        <div class="leadership-intro reveal">
-          <span class="section-label">Who We Are</span>
-          <h2>Driven by <span class="text-gradient">Vision & Purpose</span></h2>
-          <p>At Stacksol Technologies, our leadership team combines strategic foresight with deep technology expertise. Together, they steer the company's mission to deliver transformative IT solutions, build lasting partnerships, and set new benchmarks of excellence in the industry. Their complementary strengths form the foundation upon which our company thrives.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ====== Directors Section ====== -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-label">Board of Directors</span>
-          <h2>Meet Our <span class="text-gradient">Directors</span></h2>
-          <p>The founding leaders who envisioned Stacksol Technologies and continue to shape its trajectory.</p>
-        </div>
-
-        <div class="directors-grid">
-
-          <!-- Director 1: Dhruv Sandilya -->
-          <article class="director-card reveal-left">
-            <div class="director-avatar director-avatar-ds">
-              <div class="director-avatar-ring"></div>
-              DS
-            </div>
-            <h3 class="director-name">Dhruv Sandilya</h3>
-            <p class="director-title">Director</p>
-            <p class="director-bio">Co-founder and Director of Stacksol Technologies. Brings visionary leadership and strategic direction to drive the company's growth in IT solutions and government procurement.</p>
-            <div class="director-social">
-              <a href="#" aria-label="LinkedIn">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-              </a>
-              <a href="#" aria-label="Twitter">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-1.1.7-2.2 1A4.8 4.8 0 0 0 12 8v1A10 10 0 0 1 3 4s-4 9 5 13a11.6 11.6 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.7 7.7 0 0 0 22 4z"/></svg>
-              </a>
-              <a href="mailto:dhruv.sandilya2005@gmail.com" aria-label="Email">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              </a>
-            </div>
-          </article>
-
-          <!-- Director 2: Pravesh Kumar Pathak -->
-          <article class="director-card reveal-right">
-            <div class="director-avatar director-avatar-pp">
-              <div class="director-avatar-ring"></div>
-              PP
-            </div>
-            <h3 class="director-name">Pravesh Kumar Pathak</h3>
-            <p class="director-title">Director</p>
-            <p class="director-bio">Co-founder and Director with deep expertise in technology operations and client relationship management. Ensures excellence in service delivery and operational efficiency.</p>
-            <div class="director-social">
-              <a href="#" aria-label="LinkedIn">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-              </a>
-              <a href="#" aria-label="Twitter">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-1.1.7-2.2 1A4.8 4.8 0 0 0 12 8v1A10 10 0 0 1 3 4s-4 9 5 13a11.6 11.6 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.7 7.7 0 0 0 22 4z"/></svg>
-              </a>
-              <a href="#" aria-label="Email">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              </a>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ====== Company Culture ====== -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-label">Our Culture</span>
-          <h2>What <span class="text-gradient">Defines Us</span></h2>
-          <p>The core values that shape every decision we make and every solution we deliver.</p>
-        </div>
-
-        <div class="grid grid-3 stagger-children">
-
-          <!-- Innovation First -->
-          <div class="card card-glass culture-card">
-            <div class="culture-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2v4"/>
-                <path d="m6.34 6.34 2.83 2.83"/>
-                <path d="M2 12h4"/>
-                <path d="m17.66 6.34-2.83 2.83"/>
-                <path d="M22 12h-4"/>
-                <path d="M12 12a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/>
-                <path d="M12 18v4"/>
-              </svg>
-            </div>
-            <h4>Innovation First</h4>
-            <p>We foster a culture of continuous innovation, exploring new technologies and creative approaches to solve complex business challenges and stay ahead of the curve.</p>
-          </div>
-
-          <!-- Team Excellence -->
-          <div class="card card-glass culture-card">
-            <div class="culture-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                <circle cx="9" cy="7" r="4"/>
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-              </svg>
-            </div>
-            <h4>Team Excellence</h4>
-            <p>Our team is our greatest asset. We invest in growth, collaboration, and mutual respect — creating an environment where talented individuals thrive and deliver their best work.</p>
-          </div>
-
-          <!-- Client Focus -->
-          <div class="card card-glass culture-card">
-            <div class="culture-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"/>
-                <circle cx="12" cy="12" r="6"/>
-                <circle cx="12" cy="12" r="2"/>
-              </svg>
-            </div>
-            <h4>Client Focus</h4>
-            <p>Every decision starts with the client in mind. We listen deeply, understand unique requirements, and deliver tailored solutions that create measurable business value.</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ====== Join Us CTA ====== -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="join-cta-card reveal-scale">
-          <span class="section-label" style="justify-content: center;">Careers</span>
-          <h2>Want to be part of our <span class="text-gradient">growing team?</span></h2>
-          <p>We're always looking for talented individuals who share our passion for technology and innovation. Send your resume to <a href="mailto:dhruv.sandilya2005@gmail.com" class="text-accent" style="font-weight: 600;">dhruv.sandilya2005@gmail.com</a></p>
-          <a href="contact.html" class="btn btn-accent btn-lg">
-            Get in Touch
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-          </a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
+  <section class="phero">
+    <div class="phero__grid" aria-hidden="true"></div>
+    <div class="phero__orb" aria-hidden="true"></div>
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="logo">
-            <div class="logo-icon">
-              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 16C8 11.58 11.58 8 16 8h8c4.42 0 8 3.58 8 8v0c0 4.42-3.58 8-8 8h-8c-4.42 0-8 3.58-8 8v0c0 4.42 3.58 8 8 8h8c4.42 0 8-3.58 8-8" stroke="#4ee0c2" stroke-width="3" stroke-linecap="round"/>
-                <circle cx="28" cy="16" r="3" fill="#4ee0c2"/>
-                <circle cx="12" cy="32" r="3" fill="#1b6b8a"/>
-              </svg>
-            </div>
-            STACK<span>SOL</span>
-          </a>
-          <p>Your trusted partner for innovative IT solutions, hardware, and services. Empowering businesses with technology that drives growth.</p>
-          <div class="footer-social">
-            <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
-            <a href="#" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-1.1.7-2.2 1A4.8 4.8 0 0 0 12 8v1A10 10 0 0 1 3 4s-4 9 5 13a11.6 11.6 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.7 7.7 0 0 0 22 4z"/></svg></a>
-            <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      <div class="crumbs" data-reveal="fade"><a href="index.html">Home</a><span>/</span><span>Team</span></div>
+      <h1 class="display-xl phero__title" data-split="chars">The people behind the <span class="serif">stack.</span></h1>
+      <div class="phero__foot">
+        <p class="lead" data-reveal>Strategic foresight meets deep technology expertise. Our leadership steers the mission — transformative IT solutions, lasting partnerships and new benchmarks of excellence.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:clamp(30px,4vw,60px)">
+    <div class="container">
+      <div class="shead">
+        <div class="shead__l">
+          <span class="eyebrow" data-reveal>Board of directors</span>
+          <h2 class="display-l" data-split>Founders &amp; <span class="serif accent">directors.</span></h2>
+        </div>
+      </div>
+      <div class="people" data-stagger="150">
+        <article class="person" data-reveal data-tilt="4">
+          <div class="person__img"><div class="visual__grid"></div><div class="visual__glow"></div><span class="person__mono">DS</span></div>
+          <div class="person__body">
+            <span class="person__role">Co-founder · Director</span>
+            <h3>Dhruv Sandilya</h3>
+            <p>Brings visionary leadership and strategic direction, driving the company's growth across IT solutions and government procurement.</p>
+          </div>
+        </article>
+        <article class="person" data-reveal data-tilt="4">
+          <div class="person__img"><div class="visual__grid"></div><div class="visual__glow" style="animation-delay:-3s"></div><span class="person__mono">PP</span></div>
+          <div class="person__body">
+            <span class="person__role">Co-founder · Director</span>
+            <h3>Pravesh Kumar Pathak</h3>
+            <p>Deep expertise in technology operations and client relationship management — ensuring excellence in service delivery and operational efficiency.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--paper">
+    <div class="container">
+      <div class="manifesto__grid">
+        <div class="manifesto__meta"><span class="eyebrow" data-reveal>Our culture</span></div>
+        <p class="manifesto__text" data-fill>Great technology is built by people who <span class="serif">care</span> — about the craft, about each other, and about the clients who depend on what we deliver.</p>
+      </div>
+      <div class="values mt-xl" data-stagger="120">
+        <div class="value" data-reveal><span class="value__n">01</span><h3>Innovation first.</h3><p>We keep exploring new technologies and creative approaches to solve complex business challenges and stay ahead of the curve.</p></div>
+        <div class="value" data-reveal><span class="value__n">02</span><h3>Team excellence.</h3><p>Our people are our greatest asset. We invest in growth, collaboration and mutual respect so talented individuals thrive.</p></div>
+        <div class="value" data-reveal><span class="value__n">03</span><h3>Client focus.</h3><p>Every decision starts with the client. We listen deeply and deliver tailored solutions that create measurable value.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="cta__grid" aria-hidden="true"></div>
+    <div class="cta__bg" aria-hidden="true"></div>
+    <div class="container">
+      <span class="eyebrow" data-reveal>Careers</span>
+      <h2 class="display-l cta__title" data-split>Want to join a <span class="serif">growing</span> team?</h2>
+      <p class="lead" style="margin:0 auto 3rem;text-align:center" data-reveal>We're always looking for people who share our passion for technology. Send your résumé to <a href="mailto:dhruv.sandilya2005@gmail.com?subject=Careers%20at%20Stacksol" class="link-u accent">dhruv.sandilya2005@gmail.com</a>.</p>
+      <div data-reveal="scale"><a href="mailto:dhruv.sandilya2005@gmail.com?subject=Careers%20at%20Stacksol" class="circle-btn" data-magnetic="0.45"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.54 21.69a.5.5 0 0 0 .94-.02l6.5-19a.5.5 0 0 0-.64-.64l-19 6.5a.5.5 0 0 0-.02.94l7.93 3.18a2 2 0 0 1 1.11 1.11z"/><path d="m21.85 2.15-10.94 10.93"/></svg>Apply now</span></a></div>
+    </div>
+  </section>
+
+</main>
+
+  <footer class="ftr">
+    <div class="container">
+      <div class="ftr__top">
+        <div class="ftr__about">
+          <a href="index.html" class="logo"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+  <rect x="6" y="6" width="28" height="7" rx="3.5" fill="#4ee0c2"/>
+  <rect x="6" y="16.5" width="28" height="7" rx="3.5" fill="#4ee0c2" fill-opacity=".55"/>
+  <rect x="6" y="27" width="18" height="7" rx="3.5" fill="#4f7cff"/>
+  <circle cx="30.5" cy="30.5" r="3.5" fill="#eef1f6"/>
+</svg><span>STACK<b>SOL</b></span></a>
+          <p>End-to-end IT solutions, enterprise hardware and professional services — engineered for businesses and government organisations across India.</p>
+          <div class="socials">
+            <a href="https://wa.me/919319596653" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg></a>
+            <a href="mailto:dhruv.sandilya2005@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+            <a href="tel:+919319596653" aria-label="Call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
           </div>
         </div>
-        <div class="footer-col">
-          <h5>Quick Links</h5>
+        <div>
+          <h4>Company</h4>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="team.html">Our Team</a></li>
-            <li><a href="order.html">Order Online</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="portfolio.html">Our work</a></li>
+            <li><a href="team.html">Leadership</a></li>
+            <li><a href="order.html">Order online</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-        <div class="footer-col">
-          <h5>Solutions</h5>
+        <div>
+          <h4>Solutions</h4>
           <ul>
             <li><a href="services.html#endpoint">Endpoint Solutions</a></li>
-            <li><a href="services.html#cloud">Cloud Solutions</a></li>
+            <li><a href="services.html#printing">Managed Printing</a></li>
             <li><a href="services.html#cybersecurity">Cybersecurity</a></li>
+            <li><a href="services.html#cloud">Cloud Solutions</a></li>
             <li><a href="services.html#network">Network Solutions</a></li>
             <li><a href="services.html#enterprise">Enterprise Solutions</a></li>
-            <li><a href="services.html#consulting">Consulting</a></li>
+            <li><a href="services.html#consulting">IT Consulting</a></li>
           </ul>
         </div>
-        <div class="footer-col">
-          <h5>Contact Info</h5>
-          <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span>First Floor, H. No.-G-275, Gali No.-13, Block-G, Molarband Extn., Badarpur, New Delhi-110044</span>
-          </div>
-          <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.68 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.74.32 1.53.55 2.34.68a2 2 0 0 1 1.72 2v0z"/></svg>
-            <span>+91-9319596653</span>
-          </div>
-          <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <span>dhruv.sandilya2005@gmail.com</span>
-          </div>
-          <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-            <span>GSTIN: 07ABNCS9084P1Z6</span>
-          </div>
+        <div>
+          <h4>Reach us</h4>
+          <ul class="ftr__contact">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><span>First Floor, H. No. G-275, Gali No. 13, Block-G, Molarband Extn., Badarpur, New Delhi – 110044</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+919319596653">+91-9319596653</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:dhruv.sandilya2005@gmail.com">dhruv.sandilya2005@gmail.com</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8M16 13H8M16 17H8"/></svg><span>GSTIN: 07ABNCS9084P1Z6</span></li>
+          </ul>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 Stacksol Technologies Pvt. Ltd. All Rights Reserved.</p>
-        <p>Designed with precision &amp; passion</p>
+    </div>
+    <div class="ftr__word" data-split="chars" aria-hidden="true">STACKSOL</div>
+    <div class="container">
+      <div class="ftr__bottom">
+        <span>© <span data-year>2026</span> Stacksol Technologies Pvt. Ltd. All rights reserved.</span>
+        <span>New Delhi · <span data-clock>--:--</span> IST</span>
+        <a href="#" class="to-top link-u" data-top>Back to top ↑</a>
       </div>
     </div>
   </footer>
 
-  <!-- Floating Actions -->
-  <div class="float-actions">
-    <a href="https://wa.me/919319596653?text=Hi!%20I%20visited%20your%20website%20and%20would%20like%20to%20know%20more." class="float-btn float-btn-whatsapp" target="_blank" aria-label="WhatsApp">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    </a>
-    <a href="tel:+919319596653" class="float-btn float-btn-phone" aria-label="Call Us">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.68 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.74.32 1.53.55 2.34.68a2 2 0 0 1 1.72 2v0z"/></svg>
-    </a>
-  </div>
+  <a href="https://wa.me/919319596653?text=Hi!%20I%20visited%20your%20website%20and%20would%20like%20to%20know%20more." class="fab" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg></a>
 
-  <!-- Back to Top -->
-  <button class="back-to-top" aria-label="Back to top">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 15l-6-6-6 6"/></svg>
-  </button>
-
+  <script src="js/vendor/gsap.min.js" defer></script>
+  <script src="js/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="js/vendor/lenis.min.js" defer></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>

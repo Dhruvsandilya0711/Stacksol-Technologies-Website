@@ -1,0 +1,114 @@
+title: Order Online — Stacksol Technologies
+description: Request a quote for laptops, desktops, servers, storage, workstations, networking, printers and more. Competitive pricing, GeM procurement and fast pan-India delivery from Stacksol Technologies.
+page: order
+---
+<main>
+
+  <section class="phero">
+    <div class="phero__grid" aria-hidden="true"></div>
+    <div class="phero__orb" aria-hidden="true"></div>
+    <div class="container">
+      <div class="crumbs" data-reveal="fade"><a href="index.html">Home</a><span>/</span><span>Order Online</span></div>
+      <h1 class="display-xl phero__title" data-split="chars">Build your <span class="serif">order.</span></h1>
+      <div class="phero__foot">
+        <p class="lead" data-reveal>Pick what you need, tell us the details, and get the best pricing from our team within 24 hours — via email or WhatsApp.</p>
+        <div class="chips" data-reveal><span class="chip">{{icon:tag}} Best pricing</span><span class="chip">{{icon:landmark}} GeM ready</span><span class="chip">{{icon:truck}} Pan-India delivery</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:clamp(30px,4vw,60px)">
+    <div class="container">
+      <div class="shead">
+        <div class="shead__l">
+          <span class="eyebrow" data-reveal>Step 01</span>
+          <h2 class="display-m" data-split>What are you <span class="serif accent">looking for?</span></h2>
+        </div>
+        <p class="lead" data-reveal>Select one or more categories — they'll be added to your request.</p>
+      </div>
+      <div class="cats" data-stagger="60">
+        <button type="button" class="cat" data-cat="Laptops" aria-pressed="false" data-reveal><span class="cat__check">{{icon:check}}</span>{{icon:laptop}}<h3>Laptops</h3><p>Business &amp; rugged notebooks</p></button>
+        <button type="button" class="cat" data-cat="Desktops" aria-pressed="false" data-reveal><span class="cat__check">{{icon:check}}</span>{{icon:monitor}}<h3>Desktops</h3><p>Towers, AIOs &amp; thin clients</p></button>
+        <button type="button" class="cat" data-cat="Servers" aria-pressed="false" data-reveal><span class="cat__check">{{icon:check}}</span>{{icon:server}}<h3>Servers</h3><p>Rack, tower &amp; blade</p></button>
+        <button type="button" class="cat" data-cat="Data Storage" aria-pressed="false" data-reveal><span class="cat__check">{{icon:check}}</span>{{icon:database}}<h3>Data Storage</h3><p>NAS, SAN &amp; backup</p></button>
+        <button type="button" class="cat" data-cat="Workstations" aria-pressed="false" data-reveal><span class="cat__check">{{icon:check}}</span>{{icon:cpu}}<h3>Workstations</h3><p>Engineering &amp; creative power</p></button>
+        <button type="button" class="cat" data-cat="Networking" aria-pressed="false" data-reveal><span class="cat__check">{{icon:check}}</span>{{icon:wifi}}<h3>Networking</h3><p>Switches, routers, Wi-Fi &amp; firewalls</p></button>
+        <button type="button" class="cat" data-cat="Printers" aria-pressed="false" data-reveal><span class="cat__check">{{icon:check}}</span>{{icon:printer}}<h3>Printers &amp; MFPs</h3><p>Office printing &amp; supplies</p></button>
+        <button type="button" class="cat" data-cat="Smart Class" aria-pressed="false" data-reveal><span class="cat__check">{{icon:check}}</span>{{icon:presentation}}<h3>Smart Class</h3><p>Interactive panels &amp; AV</p></button>
+        <button type="button" class="cat" data-cat="Software &amp; Licences" aria-pressed="false" data-reveal><span class="cat__check">{{icon:check}}</span>{{icon:layers}}<h3>Software</h3><p>Licences &amp; subscriptions</p></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" id="quote">
+    <div class="container split split--top">
+      <div>
+        <span class="eyebrow" data-reveal>Step 02</span>
+        <h2 class="display-m mt-m" data-split>Tell us your <span class="serif accent">requirements.</span></h2>
+        <p class="lead mt-m" data-reveal>We'll reply with the best pricing, availability and delivery timelines — usually within 24 hours.</p>
+        <div class="cinfo mt-l" data-reveal>
+          <div class="cinfo__row"><span class="cinfo__ic">{{icon:phone}}</span><div><small>Bulk &amp; enterprise pricing</small><a href="tel:{{PHONE_TEL}}">{{PHONE}}</a></div></div>
+          <div class="cinfo__row"><span class="cinfo__ic">{{icon:whatsapp}}</span><div><small>WhatsApp</small><a href="https://wa.me/919319596653?text=Hi!%20I%20need%20bulk%20pricing%20for%20IT%20hardware." target="_blank" rel="noopener">Chat with sales</a></div></div>
+        </div>
+      </div>
+      <div class="panel" data-reveal>
+        <form class="form" data-form="quote" novalidate>
+          <div class="field full field--static"><input id="products" name="Products" data-label="Products" type="text" placeholder="Select categories above, or type here" autocomplete="off"><label for="products">Product interest</label></div>
+          <div class="field"><input id="q-name" name="Name" data-label="Name" type="text" placeholder=" " required autocomplete="name"><label for="q-name">Full name *</label><div class="field__err">Please enter your name.</div></div>
+          <div class="field"><input id="q-org" name="Organisation" data-label="Organisation" type="text" placeholder=" " autocomplete="organization"><label for="q-org">Organisation</label></div>
+          <div class="field"><input id="q-email" name="Email" data-label="Email" type="email" placeholder=" " required autocomplete="email"><label for="q-email">Email *</label><div class="field__err">Please enter a valid email.</div></div>
+          <div class="field"><input id="q-phone" name="Phone" data-label="Phone" type="tel" placeholder=" " required autocomplete="tel"><label for="q-phone">Phone *</label><div class="field__err">Please enter a valid phone number.</div></div>
+          <div class="field"><input id="q-qty" name="Quantity" data-label="Quantity" type="number" min="1" placeholder=" "><label for="q-qty">Quantity</label></div>
+          <div class="field field--select"><select id="q-budget" name="Budget" data-label="Budget"><option value=""></option><option>Under ₹50,000</option><option>₹50,000 – ₹2,00,000</option><option>₹2,00,000 – ₹5,00,000</option><option>₹5,00,000 – ₹10,00,000</option><option>Above ₹10,00,000</option></select><label for="q-budget">Budget range</label></div>
+          <div class="full">
+            <span class="pills-label">Procurement route</span>
+            <div class="pills">
+              <label class="pill"><input type="radio" name="Route" data-label="Procurement" value="Direct purchase" checked><span>Direct purchase</span></label>
+              <label class="pill"><input type="radio" name="Route" data-label="Procurement" value="GeM portal"><span>GeM portal</span></label>
+              <label class="pill"><input type="radio" name="Route" data-label="Procurement" value="Not sure yet"><span>Not sure yet</span></label>
+            </div>
+          </div>
+          <div class="field full"><textarea id="q-notes" name="Notes" data-label="Requirements" placeholder=" " rows="4"></textarea><label for="q-notes">Specifications &amp; special requirements</label></div>
+          <div class="form__actions full">
+            <button type="submit" class="btn btn--primary" data-via="whatsapp" data-magnetic="0.15"><span class="btn-label">Send on WhatsApp</span>{{icon:whatsapp}}</button>
+            <button type="submit" class="btn btn--ghost" data-via="email" data-magnetic="0.15"><span class="btn-label">Send by email</span>{{icon:mail}}</button>
+          </div>
+          <p class="form__note full">Your details are only used to prepare your quote.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="shead">
+        <div class="shead__l">
+          <span class="eyebrow" data-reveal>Why order from us</span>
+          <h2 class="display-m" data-split>Value at every <span class="serif accent">step.</span></h2>
+        </div>
+      </div>
+      <div class="grid g-4" data-stagger="90">
+        <div class="card" data-reveal><div class="card__icon">{{icon:tag}}</div><h3>Competitive pricing</h3><p>Best-in-class rates with transparent quotes and no hidden costs.</p></div>
+        <div class="card" data-reveal><div class="card__icon">{{icon:landmark}}</div><h3>GeM registered</h3><p>Seamless government procurement with full compliance and documentation.</p></div>
+        <div class="card" data-reveal><div class="card__icon">{{icon:truck}}</div><h3>Quick delivery</h3><p>Fast dispatch with professional installation support across India.</p></div>
+        <div class="card" data-reveal><div class="card__icon">{{icon:headset}}</div><h3>After-sales care</h3><p>Warranty coordination, AMC options and a responsive support desk.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="shead">
+        <div class="shead__l">
+          <span class="eyebrow" data-reveal>Brands we supply</span>
+          <h2 class="display-m" data-split>World-class <span class="serif accent">OEMs.</span></h2>
+        </div>
+      </div>
+      <div class="brands" data-reveal>
+        <div class="brand">HP</div><div class="brand">Dell</div><div class="brand">Lenovo</div><div class="brand">Cisco</div><div class="brand">Acer</div><div class="brand">IBM</div>
+        <div class="brand">Microsoft</div><div class="brand">Asus</div><div class="brand">Samsung</div><div class="brand">Intel</div><div class="brand">AMD</div><div class="brand">Seagate</div>
+      </div>
+    </div>
+  </section>
+
+</main>

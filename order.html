@@ -3,461 +3,266 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Order Online — Stacksol Technologies | IT Hardware & Solutions</title>
-  <meta name="description" content="Browse IT product categories and request a quote from Stacksol Technologies. Laptops, desktops, servers, storage, workstations, and networking equipment at competitive pricing.">
-  <meta name="keywords" content="order IT hardware, buy laptops, desktops, servers, networking equipment, Stacksol Technologies, GeM registered vendor">
+  <title>Order Online — Stacksol Technologies</title>
+  <meta name="description" content="Request a quote for laptops, desktops, servers, storage, workstations, networking, printers and more. Competitive pricing, GeM procurement and fast pan-India delivery from Stacksol Technologies.">
+  <meta name="theme-color" content="#06070b">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Order Online — Stacksol Technologies">
+  <meta property="og:description" content="Request a quote for laptops, desktops, servers, storage, workstations, networking, printers and more. Competitive pricing, GeM procurement and fast pan-India delivery from Stacksol Technologies.">
+  <meta property="og:site_name" content="Stacksol Technologies">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%2306070b'/%3E%3Crect x='8' y='8' width='24' height='6' rx='3' fill='%234ee0c2'/%3E%3Crect x='8' y='17' width='24' height='6' rx='3' fill='%234ee0c2' fill-opacity='.55'/%3E%3Crect x='8' y='26' width='15' height='6' rx='3' fill='%234f7cff'/%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/Syne-normal-500-800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Manrope-normal-300-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/animations.css">
-  <script src="js/main.js" defer></script>
+  <script>
+    (function (d) {
+      var r = d.documentElement; r.classList.add('js');
+      try { if (!sessionStorage.getItem('ss-visited')) r.classList.add('first'); } catch (e) {}
+      setTimeout(function () { if (!r.classList.contains('ready')) r.classList.add('ready', 'no-anim'); }, 6000);
+    })(document);
+  </script>
 </head>
-<body>
-
-  <!-- Preloader -->
-  <div class="preloader">
-    <div class="preloader-logo">STACK<span>SOL</span></div>
-    <div class="preloader-bar"></div>
+<body data-page="order">
+  <div class="loader" aria-hidden="true">
+    <div class="loader__top"><span>Stacksol Technologies</span><span>New Delhi · India</span></div>
+    <div class="loader__word"><span style="--i:0">S</span><span style="--i:1">T</span><span style="--i:2">A</span><span style="--i:3">C</span><span style="--i:4">K</span><span style="--i:5" class=a>S</span><span style="--i:6" class=a>O</span><span style="--i:7" class=a>L</span></div>
+    <div class="loader__bottom"><div class="loader__bar"><i></i></div><div class="loader__count">0</div></div>
   </div>
+  <div class="pt" aria-hidden="true"><div class="pt__col"></div><div class="pt__col"></div><div class="pt__col"></div><div class="pt__col"></div><div class="pt__col"></div><div class="pt__logo">STACK<span>SOL</span></div></div>
+  <div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><i></i></div>
 
-  <!-- Mobile Overlay -->
-  <div class="mobile-overlay"></div>
-
-  <!-- Header -->
-  <header class="header">
-    <div class="header-inner">
-      <a href="index.html" class="logo">
-        <div class="logo-icon">
-          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 16C8 11.58 11.58 8 16 8h8c4.42 0 8 3.58 8 8v0c0 4.42-3.58 8-8 8h-8c-4.42 0-8 3.58-8 8v0c0 4.42 3.58 8 8 8h8c4.42 0 8-3.58 8-8" stroke="#4ee0c2" stroke-width="3" stroke-linecap="round"/>
-            <circle cx="28" cy="16" r="3" fill="#4ee0c2"/>
-            <circle cx="12" cy="32" r="3" fill="#1b6b8a"/>
-          </svg>
-        </div>
-        STACK<span>SOL</span>
-      </a>
-      <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <div class="nav-dropdown">
-          <a href="services.html" class="nav-dropdown-toggle">Services
-            <svg viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </a>
-          <div class="nav-dropdown-menu">
-            <a href="services.html#endpoint">Endpoint Solutions</a>
-            <a href="services.html#cloud">Cloud Solutions</a>
-            <a href="services.html#cybersecurity">Cybersecurity Solutions</a>
-            <a href="services.html#network">Network Solutions</a>
-            <a href="services.html#enterprise">Enterprise Solutions</a>
-            <a href="services.html#consulting">Consulting Solutions</a>
+  <header class="hdr">
+    <div class="container hdr__in">
+      <a href="index.html" class="logo" aria-label="Stacksol Technologies — home"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+  <rect x="6" y="6" width="28" height="7" rx="3.5" fill="#4ee0c2"/>
+  <rect x="6" y="16.5" width="28" height="7" rx="3.5" fill="#4ee0c2" fill-opacity=".55"/>
+  <rect x="6" y="27" width="18" height="7" rx="3.5" fill="#4f7cff"/>
+  <circle cx="30.5" cy="30.5" r="3.5" fill="#eef1f6"/>
+</svg><span>STACK<b>SOL</b></span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="about.html" data-nav="about">About</a>
+        <div class="nav__dd">
+          <a href="services.html" data-nav="services">Solutions <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+          <div class="nav__menu">
+            <a href="services.html#endpoint"><strong>Endpoint Solutions</strong><span>Laptops, desktops, workstations & servers</span></a>
+            <a href="services.html#printing"><strong>Managed Printing</strong><span>Fleet, supplies & proactive maintenance</span></a>
+            <a href="services.html#cybersecurity"><strong>Cybersecurity</strong><span>Threat defence, VAPT & data protection</span></a>
+            <a href="services.html#cloud"><strong>Cloud Solutions</strong><span>Migration, Azure / AWS & hybrid</span></a>
+            <a href="services.html#network"><strong>Network Solutions</strong><span>LAN / WAN, wireless, VPN & SD-WAN</span></a>
+            <a href="services.html#enterprise"><strong>Enterprise Solutions</strong><span>ERP, collaboration & storage</span></a>
+            <a href="services.html#consulting"><strong>IT Consulting</strong><span>Strategy, roadmaps & audits</span></a>
+            <a href="services.html#services"><strong>Specialised Services</strong><span>Installation, data centre, AMC & more</span></a>
           </div>
         </div>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="team.html">Team</a>
-        <a href="order.html">Order Online</a>
-        <a href="contact.html" class="nav-cta">Contact Us</a>
+        <a href="portfolio.html" data-nav="portfolio">Work</a>
+        <a href="team.html" data-nav="team">Team</a>
+        <a href="order.html" data-nav="order">Order Online</a>
       </nav>
-      <button class="menu-toggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="hdr__cta">
+        <a href="contact.html" class="btn btn--primary" data-magnetic="0.25"><span class="btn-label">Let's talk</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>
+        <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      </div>
     </div>
   </header>
 
-  <main>
+  <div class="menu" aria-label="Mobile menu">
+    <nav class="menu__links">
+      <a href="index.html" data-nav="home"><span>Home</span></a>
+      <a href="about.html" data-nav="about"><span>About</span></a>
+      <a href="services.html" data-nav="services"><span>Solutions</span></a>
+      <a href="portfolio.html" data-nav="portfolio"><span>Work</span></a>
+      <a href="team.html" data-nav="team"><span>Team</span></a>
+      <a href="order.html" data-nav="order"><span>Order Online</span></a>
+      <a href="contact.html" data-nav="contact"><span>Contact</span></a>
+    </nav>
+    <div class="menu__foot">
+      <a href="tel:+919319596653">+91-9319596653</a>
+      <a href="mailto:dhruv.sandilya2005@gmail.com">dhruv.sandilya2005@gmail.com</a>
+      <span>New Delhi, India</span>
+    </div>
+  </div>
 
-    <!-- ==================== 1. Page Banner ==================== -->
-    <section class="page-banner">
-      <div class="container">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="index.html">Home</a>
-          <span>/</span>
-          <span>Order Online</span>
-        </nav>
-        <h1 class="reveal">Order <span class="text-gradient">Online</span></h1>
-        <p class="reveal" style="max-width: 600px; margin-top: var(--space-md);">Browse our product categories and request a quote for your IT requirements</p>
-      </div>
-    </section>
+<main>
 
-    <!-- ==================== 2. Product Categories ==================== -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-label">Product Categories</span>
-          <h2>What Are You <span class="text-gradient">Looking For?</span></h2>
-          <p>Select a category that matches your requirement and we'll tailor the perfect solution for you</p>
-        </div>
-
-        <div class="order-categories stagger-children">
-
-          <!-- Laptops -->
-          <div class="order-category-card" data-category="laptops" role="button" tabindex="0" aria-label="Select Laptops category">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-              <line x1="2" y1="20" x2="22" y2="20"/>
-              <line x1="8" y1="17" x2="8" y2="20"/>
-              <line x1="16" y1="17" x2="16" y2="20"/>
-            </svg>
-            <h4>Laptops</h4>
-          </div>
-
-          <!-- Desktops -->
-          <div class="order-category-card" data-category="desktops" role="button" tabindex="0" aria-label="Select Desktops category">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-              <line x1="8" y1="21" x2="16" y2="21"/>
-              <line x1="12" y1="17" x2="12" y2="21"/>
-            </svg>
-            <h4>Desktops</h4>
-          </div>
-
-          <!-- Servers -->
-          <div class="order-category-card" data-category="servers" role="button" tabindex="0" aria-label="Select Servers category">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
-              <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
-              <line x1="6" y1="6" x2="6.01" y2="6"/>
-              <line x1="6" y1="18" x2="6.01" y2="18"/>
-            </svg>
-            <h4>Servers</h4>
-          </div>
-
-          <!-- Data Storage -->
-          <div class="order-category-card" data-category="storage" role="button" tabindex="0" aria-label="Select Data Storage category">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <ellipse cx="12" cy="5" rx="9" ry="3"/>
-              <path d="M21 12c0 1.66-4.03 3-9 3s-9-1.34-9-3"/>
-              <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/>
-            </svg>
-            <h4>Data Storage</h4>
-          </div>
-
-          <!-- Workstations -->
-          <div class="order-category-card" data-category="workstations" role="button" tabindex="0" aria-label="Select Workstations category">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="4" y="4" width="16" height="16" rx="2"/>
-              <rect x="9" y="9" width="6" height="6"/>
-              <line x1="9" y1="1" x2="9" y2="4"/>
-              <line x1="15" y1="1" x2="15" y2="4"/>
-              <line x1="9" y1="20" x2="9" y2="23"/>
-              <line x1="15" y1="20" x2="15" y2="23"/>
-              <line x1="20" y1="9" x2="23" y2="9"/>
-              <line x1="20" y1="14" x2="23" y2="14"/>
-              <line x1="1" y1="9" x2="4" y2="9"/>
-              <line x1="1" y1="14" x2="4" y2="14"/>
-            </svg>
-            <h4>Workstations</h4>
-          </div>
-
-          <!-- Networking -->
-          <div class="order-category-card" data-category="networking" role="button" tabindex="0" aria-label="Select Networking category">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
-              <path d="M1.42 9a16 16 0 0 1 21.16 0"/>
-              <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
-              <circle cx="12" cy="20" r="1"/>
-            </svg>
-            <h4>Networking</h4>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== 3. Order / Inquiry Form ==================== -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-label">Request a Quote</span>
-          <h2>Tell Us Your <span class="text-gradient">Requirements</span></h2>
-          <p>Fill in the details below and our team will get back to you with the best pricing within 24 hours</p>
-        </div>
-
-        <div class="card card-glass reveal" style="max-width: 800px; margin: 0 auto;">
-          <form data-validate>
-            <!-- Hidden category input -->
-            <input type="hidden" id="order-category-input" name="category" class="form-input">
-
-            <div class="grid grid-2">
-              <!-- Full Name -->
-              <div class="form-group">
-                <label for="order-name" class="form-label">Full Name <span class="text-accent">*</span></label>
-                <input type="text" id="order-name" name="name" class="form-input" placeholder="Your full name" required>
-              </div>
-
-              <!-- Organization -->
-              <div class="form-group">
-                <label for="order-org" class="form-label">Organization / Company Name</label>
-                <input type="text" id="order-org" name="organization" class="form-input" placeholder="Company name (optional)">
-              </div>
-            </div>
-
-            <div class="grid grid-2">
-              <!-- Email -->
-              <div class="form-group">
-                <label for="order-email" class="form-label">Email Address <span class="text-accent">*</span></label>
-                <input type="email" id="order-email" name="email" class="form-input" placeholder="you@company.com" required>
-              </div>
-
-              <!-- Phone -->
-              <div class="form-group">
-                <label for="order-phone" class="form-label">Phone Number <span class="text-accent">*</span></label>
-                <input type="tel" id="order-phone" name="phone" class="form-input" placeholder="+91 XXXXX XXXXX" required data-validate-phone>
-              </div>
-            </div>
-
-            <div class="grid grid-2">
-              <!-- Product Interest -->
-              <div class="form-group">
-                <label for="order-product" class="form-label">Product Interest</label>
-                <input type="text" id="order-product" name="product" class="form-input" placeholder="e.g. HP ProBook 450, Dell PowerEdge R750">
-              </div>
-
-              <!-- Quantity -->
-              <div class="form-group">
-                <label for="order-qty" class="form-label">Quantity</label>
-                <input type="number" id="order-qty" name="quantity" class="form-input" placeholder="Number of units" min="1">
-              </div>
-            </div>
-
-            <!-- Budget Range -->
-            <div class="form-group">
-              <label for="order-budget" class="form-label">Budget Range</label>
-              <select id="order-budget" name="budget" class="form-input form-select">
-                <option value="" disabled selected>Select your budget range</option>
-                <option value="under-50k">Under ₹50,000</option>
-                <option value="50k-2l">₹50,000 – ₹2,00,000</option>
-                <option value="2l-5l">₹2,00,000 – ₹5,00,000</option>
-                <option value="5l-10l">₹5,00,000 – ₹10,00,000</option>
-                <option value="above-10l">Above ₹10,00,000</option>
-              </select>
-            </div>
-
-            <!-- Special Requirements -->
-            <div class="form-group">
-              <label for="order-requirements" class="form-label">Special Requirements</label>
-              <textarea id="order-requirements" name="requirements" class="form-input form-textarea" placeholder="Any specific configurations, delivery timelines, or additional details..."></textarea>
-            </div>
-
-            <!-- Submit -->
-            <div style="text-align: center; margin-top: var(--space-xl);">
-              <button type="submit" class="btn btn-accent btn-lg btn-ripple">
-                Request Quote
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== 4. Why Order From Us ==================== -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-label">Our Advantages</span>
-          <h2>Why Order <span class="text-gradient">From Us?</span></h2>
-          <p>We deliver value at every step — from procurement to installation</p>
-        </div>
-
-        <div class="grid grid-3 stagger-children">
-
-          <!-- Competitive Pricing -->
-          <div class="card card-glass" style="text-align: center;">
-            <div class="feature-icon" style="margin: 0 auto var(--space-lg);">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="12" y1="1" x2="12" y2="23"/>
-                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-              </svg>
-            </div>
-            <h4>Competitive Pricing</h4>
-            <p class="text-muted" style="margin-top: var(--space-sm);">Best-in-class rates for enterprise hardware with transparent pricing and no hidden costs</p>
-          </div>
-
-          <!-- GeM Registered -->
-          <div class="card card-glass" style="text-align: center;">
-            <div class="feature-icon" style="margin: 0 auto var(--space-lg);">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                <polyline points="9 12 11 14 15 10"/>
-              </svg>
-            </div>
-            <h4>GeM Registered</h4>
-            <p class="text-muted" style="margin-top: var(--space-sm);">Seamless government procurement through GeM portal with full compliance and documentation</p>
-          </div>
-
-          <!-- Quick Delivery -->
-          <div class="card card-glass" style="text-align: center;">
-            <div class="feature-icon" style="margin: 0 auto var(--space-lg);">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"/>
-                <polyline points="12 6 12 12 16 14"/>
-              </svg>
-            </div>
-            <h4>Quick Delivery</h4>
-            <p class="text-muted" style="margin-top: var(--space-sm);">Fast delivery with professional installation support and post-sales service across India</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== 5. Brands We Supply ==================== -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-label">Trusted Brands</span>
-          <h2>Brands We <span class="text-gradient">Supply</span></h2>
-          <p>We partner with world-class technology manufacturers to bring you the best</p>
-        </div>
-      </div>
-      <div class="marquee-wrapper">
-        <div class="marquee-track">
-          <div class="marquee-item">
-            <span style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: var(--text-secondary); white-space: nowrap;">HP</span>
-          </div>
-          <div class="marquee-item">
-            <span style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: var(--text-secondary); white-space: nowrap;">Dell</span>
-          </div>
-          <div class="marquee-item">
-            <span style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: var(--text-secondary); white-space: nowrap;">Lenovo</span>
-          </div>
-          <div class="marquee-item">
-            <span style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: var(--text-secondary); white-space: nowrap;">Cisco</span>
-          </div>
-          <div class="marquee-item">
-            <span style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: var(--text-secondary); white-space: nowrap;">Acer</span>
-          </div>
-          <div class="marquee-item">
-            <span style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: var(--text-secondary); white-space: nowrap;">IBM</span>
-          </div>
-          <div class="marquee-item">
-            <span style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: var(--text-secondary); white-space: nowrap;">Microsoft</span>
-          </div>
-          <div class="marquee-item">
-            <span style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: var(--text-secondary); white-space: nowrap;">Asus</span>
-          </div>
-          <div class="marquee-item">
-            <span style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: var(--text-secondary); white-space: nowrap;">Samsung</span>
-          </div>
-          <div class="marquee-item">
-            <span style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: var(--text-secondary); white-space: nowrap;">Intel</span>
-          </div>
-          <div class="marquee-item">
-            <span style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: var(--text-secondary); white-space: nowrap;">AMD</span>
-          </div>
-          <div class="marquee-item">
-            <span style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: var(--text-secondary); white-space: nowrap;">Seagate</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== 6. CTA Section ==================== -->
-    <section class="cta-section">
-      <div class="cta-bg"></div>
-      <div class="container">
-        <div class="cta-content reveal">
-          <h2>Need Bulk Pricing?</h2>
-          <p>Contact us directly for enterprise-level quotes, volume discounts, and customized procurement solutions tailored to your organization.</p>
-          <div style="display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap;">
-            <a href="tel:+919319596653" class="btn btn-accent btn-lg btn-ripple">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.68 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.74.32 1.53.55 2.34.68a2 2 0 0 1 1.72 2v0z"/></svg>
-              +91-9319596653
-            </a>
-            <a href="https://wa.me/919319596653?text=Hi!%20I%20need%20bulk%20pricing%20for%20IT%20hardware." class="btn btn-outline btn-lg" target="_blank" style="border-color: rgba(255,255,255,0.3); color: #fff;">
-              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-              WhatsApp Us
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
+  <section class="phero">
+    <div class="phero__grid" aria-hidden="true"></div>
+    <div class="phero__orb" aria-hidden="true"></div>
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="logo">
-            <div class="logo-icon">
-              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 16C8 11.58 11.58 8 16 8h8c4.42 0 8 3.58 8 8v0c0 4.42-3.58 8-8 8h-8c-4.42 0-8 3.58-8 8v0c0 4.42 3.58 8 8 8h8c4.42 0 8-3.58 8-8" stroke="#4ee0c2" stroke-width="3" stroke-linecap="round"/>
-                <circle cx="28" cy="16" r="3" fill="#4ee0c2"/>
-                <circle cx="12" cy="32" r="3" fill="#1b6b8a"/>
-              </svg>
+      <div class="crumbs" data-reveal="fade"><a href="index.html">Home</a><span>/</span><span>Order Online</span></div>
+      <h1 class="display-xl phero__title" data-split="chars">Build your <span class="serif">order.</span></h1>
+      <div class="phero__foot">
+        <p class="lead" data-reveal>Pick what you need, tell us the details, and get the best pricing from our team within 24 hours — via email or WhatsApp.</p>
+        <div class="chips" data-reveal><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.59 2.59A2 2 0 0 0 11.17 2H4a2 2 0 0 0-2 2v7.17a2 2 0 0 0 .59 1.42l8.7 8.7a2.43 2.43 0 0 0 3.42 0l6.58-6.58a2.43 2.43 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg> Best pricing</span><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 22h18"/><path d="M6 18v-7M10 18v-7M14 18v-7M18 18v-7"/><path d="m12 2 8 5H4z"/></svg> GeM ready</span><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg> Pan-India delivery</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:clamp(30px,4vw,60px)">
+    <div class="container">
+      <div class="shead">
+        <div class="shead__l">
+          <span class="eyebrow" data-reveal>Step 01</span>
+          <h2 class="display-m" data-split>What are you <span class="serif accent">looking for?</span></h2>
+        </div>
+        <p class="lead" data-reveal>Select one or more categories — they'll be added to your request.</p>
+      </div>
+      <div class="cats" data-stagger="60">
+        <button type="button" class="cat" data-cat="Laptops" aria-pressed="false" data-reveal><span class="cat__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/></svg><h3>Laptops</h3><p>Business &amp; rugged notebooks</p></button>
+        <button type="button" class="cat" data-cat="Desktops" aria-pressed="false" data-reveal><span class="cat__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg><h3>Desktops</h3><p>Towers, AIOs &amp; thin clients</p></button>
+        <button type="button" class="cat" data-cat="Servers" aria-pressed="false" data-reveal><span class="cat__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01M6 18h.01"/></svg><h3>Servers</h3><p>Rack, tower &amp; blade</p></button>
+        <button type="button" class="cat" data-cat="Data Storage" aria-pressed="false" data-reveal><span class="cat__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg><h3>Data Storage</h3><p>NAS, SAN &amp; backup</p></button>
+        <button type="button" class="cat" data-cat="Workstations" aria-pressed="false" data-reveal><span class="cat__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></svg><h3>Workstations</h3><p>Engineering &amp; creative power</p></button>
+        <button type="button" class="cat" data-cat="Networking" aria-pressed="false" data-reveal><span class="cat__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h.01"/><path d="M2 8.82a15 15 0 0 1 20 0"/><path d="M5 12.86a10 10 0 0 1 14 0"/><path d="M8.5 16.43a5 5 0 0 1 7 0"/></svg><h3>Networking</h3><p>Switches, routers, Wi-Fi &amp; firewalls</p></button>
+        <button type="button" class="cat" data-cat="Printers" aria-pressed="false" data-reveal><span class="cat__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8" rx="1"/></svg><h3>Printers &amp; MFPs</h3><p>Office printing &amp; supplies</p></button>
+        <button type="button" class="cat" data-cat="Smart Class" aria-pressed="false" data-reveal><span class="cat__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h20"/><path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"/><path d="m7 21 5-5 5 5"/></svg><h3>Smart Class</h3><p>Interactive panels &amp; AV</p></button>
+        <button type="button" class="cat" data-cat="Software &amp; Licences" aria-pressed="false" data-reveal><span class="cat__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg><h3>Software</h3><p>Licences &amp; subscriptions</p></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" id="quote">
+    <div class="container split split--top">
+      <div>
+        <span class="eyebrow" data-reveal>Step 02</span>
+        <h2 class="display-m mt-m" data-split>Tell us your <span class="serif accent">requirements.</span></h2>
+        <p class="lead mt-m" data-reveal>We'll reply with the best pricing, availability and delivery timelines — usually within 24 hours.</p>
+        <div class="cinfo mt-l" data-reveal>
+          <div class="cinfo__row"><span class="cinfo__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><div><small>Bulk &amp; enterprise pricing</small><a href="tel:+919319596653">+91-9319596653</a></div></div>
+          <div class="cinfo__row"><span class="cinfo__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg></span><div><small>WhatsApp</small><a href="https://wa.me/919319596653?text=Hi!%20I%20need%20bulk%20pricing%20for%20IT%20hardware." target="_blank" rel="noopener">Chat with sales</a></div></div>
+        </div>
+      </div>
+      <div class="panel" data-reveal>
+        <form class="form" data-form="quote" novalidate>
+          <div class="field full field--static"><input id="products" name="Products" data-label="Products" type="text" placeholder="Select categories above, or type here" autocomplete="off"><label for="products">Product interest</label></div>
+          <div class="field"><input id="q-name" name="Name" data-label="Name" type="text" placeholder=" " required autocomplete="name"><label for="q-name">Full name *</label><div class="field__err">Please enter your name.</div></div>
+          <div class="field"><input id="q-org" name="Organisation" data-label="Organisation" type="text" placeholder=" " autocomplete="organization"><label for="q-org">Organisation</label></div>
+          <div class="field"><input id="q-email" name="Email" data-label="Email" type="email" placeholder=" " required autocomplete="email"><label for="q-email">Email *</label><div class="field__err">Please enter a valid email.</div></div>
+          <div class="field"><input id="q-phone" name="Phone" data-label="Phone" type="tel" placeholder=" " required autocomplete="tel"><label for="q-phone">Phone *</label><div class="field__err">Please enter a valid phone number.</div></div>
+          <div class="field"><input id="q-qty" name="Quantity" data-label="Quantity" type="number" min="1" placeholder=" "><label for="q-qty">Quantity</label></div>
+          <div class="field field--select"><select id="q-budget" name="Budget" data-label="Budget"><option value=""></option><option>Under ₹50,000</option><option>₹50,000 – ₹2,00,000</option><option>₹2,00,000 – ₹5,00,000</option><option>₹5,00,000 – ₹10,00,000</option><option>Above ₹10,00,000</option></select><label for="q-budget">Budget range</label></div>
+          <div class="full">
+            <span class="pills-label">Procurement route</span>
+            <div class="pills">
+              <label class="pill"><input type="radio" name="Route" data-label="Procurement" value="Direct purchase" checked><span>Direct purchase</span></label>
+              <label class="pill"><input type="radio" name="Route" data-label="Procurement" value="GeM portal"><span>GeM portal</span></label>
+              <label class="pill"><input type="radio" name="Route" data-label="Procurement" value="Not sure yet"><span>Not sure yet</span></label>
             </div>
-            STACK<span>SOL</span>
-          </a>
-          <p>Your trusted partner for innovative IT solutions, hardware, and services. Empowering businesses with technology that drives growth.</p>
-          <div class="footer-social">
-            <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
-            <a href="#" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-1.1.7-2.2 1A4.8 4.8 0 0 0 12 8v1A10 10 0 0 1 3 4s-4 9 5 13a11.6 11.6 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.7 7.7 0 0 0 22 4z"/></svg></a>
-            <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          </div>
+          <div class="field full"><textarea id="q-notes" name="Notes" data-label="Requirements" placeholder=" " rows="4"></textarea><label for="q-notes">Specifications &amp; special requirements</label></div>
+          <div class="form__actions full">
+            <button type="submit" class="btn btn--primary" data-via="whatsapp" data-magnetic="0.15"><span class="btn-label">Send on WhatsApp</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg></button>
+            <button type="submit" class="btn btn--ghost" data-via="email" data-magnetic="0.15"><span class="btn-label">Send by email</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></button>
+          </div>
+          <p class="form__note full">Your details are only used to prepare your quote.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="shead">
+        <div class="shead__l">
+          <span class="eyebrow" data-reveal>Why order from us</span>
+          <h2 class="display-m" data-split>Value at every <span class="serif accent">step.</span></h2>
+        </div>
+      </div>
+      <div class="grid g-4" data-stagger="90">
+        <div class="card" data-reveal><div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.59 2.59A2 2 0 0 0 11.17 2H4a2 2 0 0 0-2 2v7.17a2 2 0 0 0 .59 1.42l8.7 8.7a2.43 2.43 0 0 0 3.42 0l6.58-6.58a2.43 2.43 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg></div><h3>Competitive pricing</h3><p>Best-in-class rates with transparent quotes and no hidden costs.</p></div>
+        <div class="card" data-reveal><div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 22h18"/><path d="M6 18v-7M10 18v-7M14 18v-7M18 18v-7"/><path d="m12 2 8 5H4z"/></svg></div><h3>GeM registered</h3><p>Seamless government procurement with full compliance and documentation.</p></div>
+        <div class="card" data-reveal><div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg></div><h3>Quick delivery</h3><p>Fast dispatch with professional installation support across India.</p></div>
+        <div class="card" data-reveal><div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"/><path d="M21 16v2a4 4 0 0 1-4 4h-5"/></svg></div><h3>After-sales care</h3><p>Warranty coordination, AMC options and a responsive support desk.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="shead">
+        <div class="shead__l">
+          <span class="eyebrow" data-reveal>Brands we supply</span>
+          <h2 class="display-m" data-split>World-class <span class="serif accent">OEMs.</span></h2>
+        </div>
+      </div>
+      <div class="brands" data-reveal>
+        <div class="brand">HP</div><div class="brand">Dell</div><div class="brand">Lenovo</div><div class="brand">Cisco</div><div class="brand">Acer</div><div class="brand">IBM</div>
+        <div class="brand">Microsoft</div><div class="brand">Asus</div><div class="brand">Samsung</div><div class="brand">Intel</div><div class="brand">AMD</div><div class="brand">Seagate</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+  <footer class="ftr">
+    <div class="container">
+      <div class="ftr__top">
+        <div class="ftr__about">
+          <a href="index.html" class="logo"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+  <rect x="6" y="6" width="28" height="7" rx="3.5" fill="#4ee0c2"/>
+  <rect x="6" y="16.5" width="28" height="7" rx="3.5" fill="#4ee0c2" fill-opacity=".55"/>
+  <rect x="6" y="27" width="18" height="7" rx="3.5" fill="#4f7cff"/>
+  <circle cx="30.5" cy="30.5" r="3.5" fill="#eef1f6"/>
+</svg><span>STACK<b>SOL</b></span></a>
+          <p>End-to-end IT solutions, enterprise hardware and professional services — engineered for businesses and government organisations across India.</p>
+          <div class="socials">
+            <a href="https://wa.me/919319596653" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg></a>
+            <a href="mailto:dhruv.sandilya2005@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+            <a href="tel:+919319596653" aria-label="Call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
           </div>
         </div>
-        <div class="footer-col">
-          <h5>Quick Links</h5>
+        <div>
+          <h4>Company</h4>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="team.html">Our Team</a></li>
-            <li><a href="order.html">Order Online</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="portfolio.html">Our work</a></li>
+            <li><a href="team.html">Leadership</a></li>
+            <li><a href="order.html">Order online</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-        <div class="footer-col">
-          <h5>Solutions</h5>
+        <div>
+          <h4>Solutions</h4>
           <ul>
             <li><a href="services.html#endpoint">Endpoint Solutions</a></li>
-            <li><a href="services.html#cloud">Cloud Solutions</a></li>
+            <li><a href="services.html#printing">Managed Printing</a></li>
             <li><a href="services.html#cybersecurity">Cybersecurity</a></li>
+            <li><a href="services.html#cloud">Cloud Solutions</a></li>
             <li><a href="services.html#network">Network Solutions</a></li>
             <li><a href="services.html#enterprise">Enterprise Solutions</a></li>
-            <li><a href="services.html#consulting">Consulting</a></li>
+            <li><a href="services.html#consulting">IT Consulting</a></li>
           </ul>
         </div>
-        <div class="footer-col">
-          <h5>Contact Info</h5>
-          <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span>First Floor, H. No.-G-275, Gali No.-13, Block-G, Molarband Extn., Badarpur, New Delhi-110044</span>
-          </div>
-          <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.68 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.74.32 1.53.55 2.34.68a2 2 0 0 1 1.72 2v0z"/></svg>
-            <span>+91-9319596653</span>
-          </div>
-          <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <span>dhruv.sandilya2005@gmail.com</span>
-          </div>
-          <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-            <span>GSTIN: 07ABNCS9084P1Z6</span>
-          </div>
+        <div>
+          <h4>Reach us</h4>
+          <ul class="ftr__contact">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><span>First Floor, H. No. G-275, Gali No. 13, Block-G, Molarband Extn., Badarpur, New Delhi – 110044</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+919319596653">+91-9319596653</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:dhruv.sandilya2005@gmail.com">dhruv.sandilya2005@gmail.com</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8M16 13H8M16 17H8"/></svg><span>GSTIN: 07ABNCS9084P1Z6</span></li>
+          </ul>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 Stacksol Technologies Pvt. Ltd. All Rights Reserved.</p>
-        <p>Designed with precision &amp; passion</p>
+    </div>
+    <div class="ftr__word" data-split="chars" aria-hidden="true">STACKSOL</div>
+    <div class="container">
+      <div class="ftr__bottom">
+        <span>© <span data-year>2026</span> Stacksol Technologies Pvt. Ltd. All rights reserved.</span>
+        <span>New Delhi · <span data-clock>--:--</span> IST</span>
+        <a href="#" class="to-top link-u" data-top>Back to top ↑</a>
       </div>
     </div>
   </footer>
 
-  <!-- Floating Actions -->
-  <div class="float-actions">
-    <a href="https://wa.me/919319596653?text=Hi!%20I%20visited%20your%20website%20and%20would%20like%20to%20know%20more." class="float-btn float-btn-whatsapp" target="_blank" aria-label="WhatsApp">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    </a>
-    <a href="tel:+919319596653" class="float-btn float-btn-phone" aria-label="Call Us">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.68 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.74.32 1.53.55 2.34.68a2 2 0 0 1 1.72 2v0z"/></svg>
-    </a>
-  </div>
+  <a href="https://wa.me/919319596653?text=Hi!%20I%20visited%20your%20website%20and%20would%20like%20to%20know%20more." class="fab" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg></a>
 
-  <!-- Back to Top -->
-  <button class="back-to-top" aria-label="Back to top">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 15l-6-6-6 6"/></svg>
-  </button>
-
+  <script src="js/vendor/gsap.min.js" defer></script>
+  <script src="js/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="js/vendor/lenis.min.js" defer></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
